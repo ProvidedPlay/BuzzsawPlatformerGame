@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: aa852f400f0bd5b4eb8cd7717857189d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 122306809956134739
+    second: PlayerDeatth (1)_0
+  - first:
+      213: 5300552021591328012
+    second: PlayerDeatth (1)_1
+  - first:
+      213: -3105048056422502352
+    second: PlayerDeatth (1)_2
+  - first:
+      213: -6442891307957204302
+    second: PlayerDeatth (1)_3
+  - first:
+      213: 1692025862454710260
+    second: PlayerDeatth (1)_4
+  - first:
+      213: 3604699863218055117
+    second: PlayerDeatth (1)_5
+  - first:
+      213: -3843792681936813489
+    second: PlayerDeatth (1)_6
+  - first:
+      213: 2036291916575352955
+    second: PlayerDeatth (1)_7
+  - first:
+      213: 3950304611810240788
+    second: PlayerDeatth (1)_8
+  - first:
+      213: 803017513945436483
+    second: PlayerDeatth (1)_9
+  - first:
+      213: 1636877247115968121
+    second: PlayerDeatth (1)_10
+  - first:
+      213: 993023335166103998
+    second: PlayerDeatth (1)_11
+  - first:
+      213: 924470292728890291
+    second: PlayerDeatth (1)_12
+  - first:
+      213: -6445297903087748531
+    second: PlayerDeatth (1)_13
+  - first:
+      213: -1329677870140743580
+    second: PlayerDeatth (1)_14
+  - first:
+      213: -8699642497060295428
+    second: PlayerDeatth (1)_15
+  - first:
+      213: 265932972843103698
+    second: PlayerDeatth (1)_16
+  - first:
+      213: -7232596648102224170
+    second: PlayerDeatth (1)_17
+  - first:
+      213: -5981326335914248502
+    second: PlayerDeatth (1)_18
+  - first:
+      213: 1607274418330990278
+    second: PlayerDeatth (1)_19
+  - first:
+      213: 8131895395112157276
+    second: PlayerDeatth (1)_20
+  - first:
+      213: 82875895168313603
+    second: PlayerDeatth (1)_21
+  - first:
+      213: -2774857071695194859
+    second: PlayerDeatth (1)_22
+  - first:
+      213: 4854980457080394112
+    second: PlayerDeatth (1)_23
+  - first:
+      213: 8570116929128981514
+    second: PlayerDeatth (1)_24
+  - first:
+      213: 5095253799525440193
+    second: PlayerDeatth (1)_25
+  - first:
+      213: 5932717002877890682
+    second: PlayerDeatth (1)_26
+  - first:
+      213: 4981359226292845052
+    second: PlayerDeatth (1)_27
+  - first:
+      213: 3000184480475708429
+    second: PlayerDeatth (1)_28
+  - first:
+      213: -1105967132433082500
+    second: PlayerDeatth (1)_29
+  - first:
+      213: 9071240613066841899
+    second: PlayerDeatth (1)_30
+  - first:
+      213: -5757524853716120908
+    second: PlayerDeatth (1)_31
+  - first:
+      213: -8085705495574083075
+    second: PlayerDeatth (1)_32
+  - first:
+      213: 3445054058594002685
+    second: PlayerDeatth (1)_33
+  - first:
+      213: 4079212334412738517
+    second: PlayerDeatth (1)_34
+  - first:
+      213: -6033106325342635001
+    second: PlayerDeatth (1)_35
+  - first:
+      213: 8989731075141621053
+    second: PlayerDeatth (1)_36
+  - first:
+      213: 8354790066645624701
+    second: PlayerDeatth (1)_37
+  - first:
+      213: 7617767018929932770
+    second: PlayerDeatth (1)_38
+  - first:
+      213: 5324982347340005350
+    second: PlayerDeatth (1)_39
+  - first:
+      213: -7342497300277447845
+    second: PlayerDeatth (1)_40
+  - first:
+      213: -4815816957481946539
+    second: PlayerDeatth (1)_41
+  - first:
+      213: -7544066587393379558
+    second: PlayerDeatth (1)_42
+  - first:
+      213: -5138659273855276848
+    second: PlayerDeatth (1)_43
+  - first:
+      213: -4605038418986532116
+    second: PlayerDeatth (1)_44
+  - first:
+      213: -5880490472849043225
+    second: PlayerDeatth (1)_45
+  - first:
+      213: -4004140193771861280
+    second: PlayerDeatth (1)_46
+  - first:
+      213: 3029725135093817758
+    second: PlayerDeatth (1)_47
+  - first:
+      213: -7882893840392079068
+    second: PlayerDeatth (1)_48
+  - first:
+      213: -8504814662828410495
+    second: PlayerDeatth (1)_49
+  - first:
+      213: 8169114353002377378
+    second: PlayerDeatth (1)_50
+  - first:
+      213: 1445217734245970036
+    second: PlayerDeatth (1)_51
+  - first:
+      213: -8144890573024806243
+    second: PlayerDeatth (1)_52
+  - first:
+      213: 8739900672454788288
+    second: PlayerDeatth (1)_53
+  - first:
+      213: -5497945926800823468
+    second: PlayerDeatth (1)_54
+  - first:
+      213: 9100890752582098526
+    second: PlayerDeatth (1)_55
+  - first:
+      213: 7705342976613350763
+    second: PlayerDeatth (1)_56
+  - first:
+      213: -4165474967785712830
+    second: PlayerDeatth (1)_57
+  - first:
+      213: 7324200138975885552
+    second: PlayerDeatth (1)_58
+  - first:
+      213: -6971607138177153496
+    second: PlayerDeatth (1)_59
+  - first:
+      213: 7782742602145344030
+    second: PlayerDeatth (1)_60
+  - first:
+      213: -2525280917807367390
+    second: PlayerDeatth (1)_61
+  - first:
+      213: 8021223565374570944
+    second: PlayerDeatth (1)_62
+  - first:
+      213: 4703515686239757517
+    second: PlayerDeatth (1)_63
+  - first:
+      213: 193483434606832723
+    second: PlayerDeatth (1)_64
+  - first:
+      213: 8630821663455550055
+    second: PlayerDeatth (1)_65
+  - first:
+      213: -1425262247091663336
+    second: PlayerDeatth (1)_66
+  - first:
+      213: -7725158119278247578
+    second: PlayerDeatth (1)_67
+  - first:
+      213: 440275496449853079
+    second: PlayerDeatth (1)_68
+  - first:
+      213: 2345498555020111229
+    second: PlayerDeatth (1)_69
+  - first:
+      213: -5079835990653250984
+    second: PlayerDeatth (1)_70
+  - first:
+      213: -7915873690979942355
+    second: PlayerDeatth (1)_71
+  - first:
+      213: 5361361537797840527
+    second: PlayerDeatth (1)_72
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDeatth (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26303fec3bdb464e878bbea43642a05
+      internalID: 122306809956134739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDeatth (1)_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac776f89ff2f344b9c90d321fcf770f
+      internalID: 5300552021591328012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDeatth (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd9093bc11a8514cb4967d070ec5f41
+      internalID: -3105048056422502352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDeatth (1)_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d208d7a75784f74b9b59c4b2c09011c
+      internalID: -6442891307957204302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3537261330774493362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3537261330774493361}
+  - component: {fileID: 3537261330774493360}
+  - component: {fileID: 3537261330774493375}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: AudioManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3537261330774493361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537261330774493362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3537261330774493360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537261330774493362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9132571bf97a9cb4ab1d1c215bc776dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTag: 
+--- !u!114 &3537261330774493375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537261330774493362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9021e8f37842ce4d99c8393189654ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loopCurrentSong: 0
+  musicPlayerPaused: 0
+  musicPlayerStopped: 0
+  masterVolume: 0
+  soundEffectVolume: 0
+  musicVolume: 0
+  audioMixer: {fileID: 24100000, guid: b7ed54d08aece07439152f820c5bc5ce, type: 2}
+  gameController: {fileID: 0}
+  soundEffects:
+  - name: Landing Sound
+    clip: {fileID: 8300000, guid: 65c94b365decdc34f8e70c2562faac62, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.351
+    pitch: 1.5
+  - name: Jump Sound
+    clip: {fileID: 8300000, guid: 80884c25ef016cf4e851cca2bb48327a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1.205
+  - name: Double Jump Sound
+    clip: {fileID: 8300000, guid: 80884c25ef016cf4e851cca2bb48327a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1
+  - name: Hit
+    clip: {fileID: 8300000, guid: 7ea3793f2efbab74eaa5ce35eb620b01, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.45
+    pitch: 1
+  - name: Dash
+    clip: {fileID: 8300000, guid: bf9066eb016370545ab579842ed19b4b, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.16
+    pitch: 1
+  - name: Switch On
+    clip: {fileID: 8300000, guid: d65abe0c0de89504cb97b9d4c217c2a7, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.4
+    pitch: 0.6
+  - name: Switch Off
+    clip: {fileID: 8300000, guid: 1085345269a65474da74f2832882d25a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.185
+    pitch: 0.509
+  - name: Open Menu
+    clip: {fileID: 8300000, guid: 94698db956be76544863384a645d9889, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+  - name: Close Menu
+    clip: {fileID: 8300000, guid: ddd0e8ffbfc2b534bbe29e9685e05000, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+  - name: Button Press
+    clip: {fileID: 8300000, guid: 0dca714a20c1476429313892b62190d2, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+  - name: Power Up
+    clip: {fileID: 8300000, guid: f56bbe9eae2a7de4a9a4468954662561, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.25
+    pitch: 1.15
+  - name: Tron Tail
+    clip: {fileID: 8300000, guid: 2b759446c04b5f646b8a81959c473bac, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.155
+    pitch: 1.15
+  - name: Win Sound
+    clip: {fileID: 8300000, guid: 7bb5f720aefe3bb4db2d0a52b1e3c4d9, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.7
+    pitch: 0.858
+  songs:
+  - name: 8 bit Song
+    clip: {fileID: 8300000, guid: c02f0d82f796a60429c3e9f384a03ec8, type: 3}
+    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.2
+    pitch: 1
+  - name: Ambient Music 1
+    clip: {fileID: 8300000, guid: 6eff6061eec0e284a9a43a1dffa9eebc, type: 3}
+    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1
+  currentSong:
+    name: 
+    clip: {fileID: 0}
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+    volume: 0
+    pitch: 0
+  mixerGroups:
+  - Effects Volume
+  - Master Volume
+  - Music Volume
