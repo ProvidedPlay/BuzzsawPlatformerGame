@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8313747652427870487}
   m_Layer: 8
   m_Name: PlayerLight
-  m_TagString: Untagged
+  m_TagString: PlayerLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000002d5b29bb
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -278,6 +278,7 @@ MonoBehaviour:
   - Double Jump
   tronTailActive: 0
   inTronZone: 0
+  globalLightOn: 0
   previousGravityScale: 0
   delayedJumpTimer: 0
   wallLeft: 0
@@ -292,6 +293,7 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   levelSwitches: []
   levelSwitchObjects: []
+  levelLight: {fileID: 0}
   rb: {fileID: 3623268968961100894}
 --- !u!70 &3623268968961100891
 CapsuleCollider2D:
@@ -409,6 +411,7 @@ MonoBehaviour:
   interruptableSwitchNames:
   - Refresh Ability
   - Reverse Gravity
+  - Light Switch
   player: {fileID: 0}
   gameController: {fileID: 0}
 --- !u!114 &-7399517326831760979
@@ -443,6 +446,7 @@ MonoBehaviour:
   interruptableSwitchNames:
   - Refresh Ability
   - Reverse Gravity
+  - Light Switch
   player: {fileID: 0}
   gameController: {fileID: 0}
   doubleJumpSpeedThreshold: 0
@@ -494,6 +498,7 @@ MonoBehaviour:
   interruptableSwitchNames:
   - Refresh Ability
   - Reverse Gravity
+  - Light Switch
   player: {fileID: 0}
   gameController: {fileID: 0}
   dashSpeed: 25
@@ -531,6 +536,7 @@ MonoBehaviour:
   interruptableSwitchNames:
   - Refresh Ability
   - Reverse Gravity
+  - Light Switch
   player: {fileID: 0}
   gameController: {fileID: 0}
   dashSpeed: 25
@@ -568,6 +574,7 @@ MonoBehaviour:
   interruptableSwitchNames:
   - Refresh Ability
   - Reverse Gravity
+  - Light Switch
   player: {fileID: 0}
   gameController: {fileID: 0}
   dashSpeed: 25

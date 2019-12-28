@@ -8,6 +8,7 @@ public abstract class Switch : MonoBehaviour
     public bool resetOnGround;
     public bool flipLinkedSwitch;
     public bool linkedSwitch;
+    public bool linkedLight;
     public bool activateByDirection;
     public Sprite activeSprite;
     public Sprite inActiveSprite;
@@ -54,6 +55,10 @@ public abstract class Switch : MonoBehaviour
     public virtual void UpdateSprite()
     {
         sp.sprite = switchActive ? activeSprite : inActiveSprite;
+    }
+    public virtual void UpdateSwitchLight()
+    {
+
     }
     public virtual void ActivateSwitch()
     {

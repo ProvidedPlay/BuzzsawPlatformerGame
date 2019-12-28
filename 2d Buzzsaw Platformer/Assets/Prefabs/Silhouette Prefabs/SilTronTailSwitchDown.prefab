@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5399213382688259977}
   - component: {fileID: 5399213382688259972}
-  - component: {fileID: 5399213382688259975}
   - component: {fileID: 5399213382688259974}
+  - component: {fileID: 9139284524350742440}
+  - component: {fileID: 5248449386048750828}
   m_Layer: 0
-  m_Name: RefreshSwitch
+  m_Name: TronTailSwitchDown 1
   m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68,10 +69,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
+  m_SortingLayerID: 1431632675
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 2624737152739864998, guid: 64a91146022216c4ba33ebd58aec2bc7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83,45 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5399213382688259975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5399213382688259976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35064c37422ff4c4d88df5d636435424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchName: Refresh Ability
-  resetOnGround: 1
-  flipLinkedSwitch: 0
-  linkedSwitch: 0
-  activateByDirection: 0
-  activeSprite: {fileID: 2630023598265923547, guid: 1fdd3ba886ff96d44bc237cce3aac110,
-    type: 3}
-  inActiveSprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
-    type: 3}
-  interruptableAbilityNames:
-  - Jump
-  - Double Jump
-  - Dash
-  - Dash Improved
-  - Dash Ultra
-  deactivationCheckTimer: 0
-  activationCheckTimer: 0
-  switchActive: 0
-  stoppingMotion: 0
-  sp: {fileID: 0}
-  player: {fileID: 0}
-  interruptableAbilities: []
-  col: {fileID: 0}
-  gameController: {fileID: 0}
-  tronTail: {fileID: 0}
-  snapMotionSpeed: 25
-  stopMotionLength: 0.1
 --- !u!58 &5399213382688259974
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -138,3 +100,61 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &9139284524350742440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399213382688259976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43446cd3e04f0894292d239f97c5ec4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchName: Tron Tail Switch
+  resetOnGround: 0
+  flipLinkedSwitch: 0
+  linkedSwitch: 1
+  linkedLight: 0
+  activateByDirection: 1
+  activeSprite: {fileID: 2624737152739864998, guid: 64a91146022216c4ba33ebd58aec2bc7,
+    type: 3}
+  inActiveSprite: {fileID: 8733329657037584862, guid: 64a91146022216c4ba33ebd58aec2bc7,
+    type: 3}
+  interruptableAbilityNames: []
+  deactivationCheckTimer: 0
+  activationCheckTimer: 0
+  switchActive: 0
+  stoppingMotion: 0
+  sp: {fileID: 0}
+  player: {fileID: 0}
+  interruptableAbilities: []
+  col: {fileID: 0}
+  gameController: {fileID: 0}
+  tronTail: {fileID: 0}
+  deactivationCheckPeriod: 0
+  switchPositionOffset: 0
+  activationCheckPeriod: 0
+  switchDirection: down
+--- !u!50 &5248449386048750828
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399213382688259976}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

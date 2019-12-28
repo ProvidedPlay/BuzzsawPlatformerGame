@@ -19,6 +19,8 @@ TagManager:
   - AudioManager
   - PauseMenuCanvas
   - Tron Tail Zone
+  - LevelLight
+  - PlayerLight
   layers:
   - Default
   - TransparentFX
@@ -58,4 +60,7 @@ TagManager:
     locked: 0
   - name: Silhouetted
     uniqueID: 1431632675
+    locked: 0
+  - name: Foreground
+    uniqueID: 3140049709
     locked: 0

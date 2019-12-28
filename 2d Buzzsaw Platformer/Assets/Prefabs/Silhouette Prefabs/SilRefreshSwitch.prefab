@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5399213382688259975}
   - component: {fileID: 5399213382688259974}
   m_Layer: 0
-  m_Name: RefreshSwitch
+  m_Name: RefreshSwitchSilhouette
   m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1431632675
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
     type: 3}
@@ -99,9 +99,9 @@ MonoBehaviour:
   resetOnGround: 1
   flipLinkedSwitch: 0
   linkedSwitch: 0
+  linkedLight: 0
   activateByDirection: 0
-  activeSprite: {fileID: 2630023598265923547, guid: 1fdd3ba886ff96d44bc237cce3aac110,
-    type: 3}
+  activeSprite: {fileID: 21300000, guid: 59f69939bc27a4741aa5f5d1476f46c8, type: 3}
   inActiveSprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
     type: 3}
   interruptableAbilityNames:

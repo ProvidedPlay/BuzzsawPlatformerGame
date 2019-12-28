@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5399213382688259977}
   - component: {fileID: 5399213382688259972}
-  - component: {fileID: 5399213382688259975}
   - component: {fileID: 5399213382688259974}
+  - component: {fileID: 6033509416997548227}
   m_Layer: 0
-  m_Name: RefreshSwitch
+  m_Name: ReverseGravitySwitch 1
   m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68,10 +68,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
+  m_SortingLayerID: 1431632675
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -7834314852814175136, guid: bb1cce5eb1448094fa47d3d7dfc833de,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83,7 +83,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5399213382688259975
+--- !u!58 &5399213382688259974
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399213382688259976}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &6033509416997548227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,17 +108,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5399213382688259976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35064c37422ff4c4d88df5d636435424, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c49fac9aa42668468738bea663939b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchName: Refresh Ability
-  resetOnGround: 1
-  flipLinkedSwitch: 0
-  linkedSwitch: 0
+  switchName: Reverse Gravity
+  resetOnGround: 0
+  flipLinkedSwitch: 1
+  linkedSwitch: 1
+  linkedLight: 0
   activateByDirection: 0
-  activeSprite: {fileID: 2630023598265923547, guid: 1fdd3ba886ff96d44bc237cce3aac110,
+  activeSprite: {fileID: 5201287833566040158, guid: bb1cce5eb1448094fa47d3d7dfc833de,
     type: 3}
-  inActiveSprite: {fileID: 7354013734557778144, guid: 1fdd3ba886ff96d44bc237cce3aac110,
+  inActiveSprite: {fileID: -7834314852814175136, guid: bb1cce5eb1448094fa47d3d7dfc833de,
     type: 3}
   interruptableAbilityNames:
   - Jump
@@ -122,19 +139,4 @@ MonoBehaviour:
   tronTail: {fileID: 0}
   snapMotionSpeed: 25
   stopMotionLength: 0.1
---- !u!58 &5399213382688259974
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5399213382688259976}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  deactivationCheckPeriod: 0.03
