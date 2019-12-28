@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.LWRP;
 
 public class Player : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class Player : MonoBehaviour
     public MoveAbility[] moveAbilities;
     public string[] delayedActionAbilities;
     [HideInInspector] public bool tronTailActive;
-     public bool inTronZone;
+    [HideInInspector]public bool inTronZone;
+     public bool globalLightOn;
     [HideInInspector] public float previousGravityScale;
     [HideInInspector] public float delayedJumpTimer;
     [HideInInspector] public bool wallLeft;
@@ -26,12 +28,14 @@ public class Player : MonoBehaviour
     [HideInInspector] public AudioManager audioManager;
     [HideInInspector] public List<Switch> levelSwitches;
     [HideInInspector] public GameObject[] levelSwitchObjects;
+    [HideInInspector] public Light2D levelLight;
 
     [HideInInspector] public Rigidbody2D rb;
     Animator anim;
     GameController controller;
     SpriteRenderer sp;
     Collider2D col;
+    Light2D playerLight;
     
 
 
@@ -44,6 +48,8 @@ public class Player : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        playerLight = GameObject.FindGameObjectWithTag("PlayerLight").GetComponent<Light2D>();
+        FindLevelLight();
         FindLevelSwitches();
     }
     private void Start()
@@ -137,6 +143,14 @@ public class Player : MonoBehaviour
         PlaySound("Win Sound");
         controller.GameOver();
     }
+    public void FindLevelLight()
+    {
+        GameObject levelLightObject = GameObject.FindGameObjectWithTag("LevelLight");
+        if (levelLightObject != null)
+        {
+            levelLight = levelLightObject.GetComponent<Light2D>();
+        }
+    }
     public void FindLevelSwitches()
     {
         if (levelSwitches.Count ==0)
@@ -192,6 +206,17 @@ public class Player : MonoBehaviour
             }
         }
     }
+    public void UpdateLinkedLightSwitches(string switchName)
+    {
+        foreach (Switch levelSwitch in levelSwitches)
+        {
+            if (levelSwitch.linkedLight && levelSwitch.switchName == switchName)
+            {
+                levelSwitch.UpdateSprite();
+                levelSwitch.UpdateSwitchLight();
+            }
+        }
+    }
     //public void ResetLinkedTimers(string switchName)
     //{
     //    foreach (Switch levelSwitch in levelSwitches)
@@ -222,6 +247,15 @@ public class Player : MonoBehaviour
             
         }
         return false;
+    }
+    public void ToggleLevelLight(bool toggleOn)
+    {
+        if (levelLight != null)
+        {
+            levelLight.enabled = toggleOn;
+            playerLight.enabled = !toggleOn;
+            globalLightOn = toggleOn;
+        }
     }
     void InputMovements()
     {
