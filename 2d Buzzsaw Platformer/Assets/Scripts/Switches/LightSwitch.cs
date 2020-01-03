@@ -9,6 +9,7 @@ public class LightSwitch : Switch
     public float snapMotionSpeed;
     public Light2D switchLight;
     public Sprite inActiveSpriteLightOn;
+    public Sprite activeSpriteLightOff;
 
     Vector2 previousVelocity;
     public override void Awake()
@@ -36,7 +37,7 @@ public class LightSwitch : Switch
     {
         if (switchActive)
         {
-            sp.sprite = activeSprite;
+            sp.sprite = player.globalLightOn ? activeSprite : activeSpriteLightOff;
         }
         if (!switchActive)
         {
@@ -55,13 +56,22 @@ public class LightSwitch : Switch
 
         
     }
+    public void LeaveSwitch()
+    {
+        player.ToggleLevelLight(false);
+        player.UpdateLinkedLightSwitches("Light Switch");
+    }
     public override void UpdateSwitchLight()
     {
-        switchLight.enabled = !player.globalLightOn;
+        switchLight.enabled = player.globalLightOn ? false : !switchActive; 
     }
     void UpdateGlobalLight()
     {
         player.ToggleLevelLight(switchActive);
+    }
+    void UpdateGlobalLight(bool forceOn)
+    {
+        player.ToggleLevelLight(forceOn);
     }
     void SnapMotion()
     {
@@ -99,6 +109,6 @@ public class LightSwitch : Switch
         stoppingMotion = false;
         player.rb.gravityScale = player.previousGravityScale;
         player.rb.velocity = Vector2.zero;
-
+        LeaveSwitch();//Test this feature: has light turn off when player jumps away
     }
 }

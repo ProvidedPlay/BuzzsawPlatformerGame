@@ -126,6 +126,8 @@ MonoBehaviour:
   switchLight: {fileID: -8053998407027043116}
   inActiveSpriteLightOn: {fileID: -3427487722953967651, guid: cdce6bb3adbd509498a3b9d2ab409718,
     type: 3}
+  activeSpriteLightOff: {fileID: -8191337472620139264, guid: ca8d92a038ff35c4d9d63e79d6c4f3ef,
+    type: 3}
 --- !u!58 &5399213382688259974
 CircleCollider2D:
   m_ObjectHideFlags: 0

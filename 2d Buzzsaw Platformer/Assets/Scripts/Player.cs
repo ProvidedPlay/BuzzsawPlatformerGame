@@ -12,8 +12,9 @@ public class Player : MonoBehaviour
     public MoveAbility[] moveAbilities;
     public string[] delayedActionAbilities;
     [HideInInspector] public bool tronTailActive;
-    [HideInInspector]public bool inTronZone;
-     public bool globalLightOn;
+    [HideInInspector] public bool inTronZone;
+    [HideInInspector] public bool globalLightOn;
+    [HideInInspector] public bool globalLightPresent;
     [HideInInspector] public float previousGravityScale;
     [HideInInspector] public float delayedJumpTimer;
     [HideInInspector] public bool wallLeft;
@@ -139,6 +140,7 @@ public class Player : MonoBehaviour
     {
         anim.enabled = false;
         sp.enabled = false;
+        playerLight.enabled = false;
         playerReachedGoal = true;
         PlaySound("Win Sound");
         controller.GameOver();
@@ -148,6 +150,7 @@ public class Player : MonoBehaviour
         GameObject levelLightObject = GameObject.FindGameObjectWithTag("LevelLight");
         if (levelLightObject != null)
         {
+            globalLightPresent = true;
             levelLight = levelLightObject.GetComponent<Light2D>();
         }
     }
@@ -164,22 +167,25 @@ public class Player : MonoBehaviour
     }
     public void GroundResetSwitches()
     {
-        bool switchReset = false;
-        foreach (Switch levelSwitch in levelSwitches)
+        if (!playerIsDead)
         {
-            if (levelSwitch.resetOnGround)
+            bool switchReset = false;
+            foreach (Switch levelSwitch in levelSwitches)
             {
-                if (levelSwitch.switchActive)
+                if (levelSwitch.resetOnGround)
                 {
-                    levelSwitch.ResetSwitch();
-                    switchReset = true;
+                    if (levelSwitch.switchActive)
+                    {
+                        levelSwitch.ResetSwitch();
+                        switchReset = true;
+                    }
                 }
             }
-        }
-        if (switchReset)
-        {
-            switchReset = false;
-            PlaySound("Switch Off");
+            if (switchReset)
+            {
+                switchReset = false;
+                PlaySound("Switch Off");
+            }
         }
     }
     public void SetLinkedSwitchesActive(string switchName, bool setActive)

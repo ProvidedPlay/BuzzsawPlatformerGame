@@ -64,3 +64,6 @@ TagManager:
   - name: Foreground
     uniqueID: 3140049709
     locked: 0
+  - name: AlwaysDarkForeground
+    uniqueID: 2201545863
+    locked: 0
