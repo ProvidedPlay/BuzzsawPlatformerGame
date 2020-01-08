@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -14243,31 +14243,6 @@ PrefabInstance:
       propertyPath: playerMoveSpeed
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_UseNormalMap
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_LightType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: -1154917587
-      objectReference: {fileID: 0}
     - target: {fileID: 673941010354345132, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -14366,12 +14341,12 @@ PrefabInstance:
     - target: {fileID: 6361587941301454559, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -14386,7 +14361,7 @@ PrefabInstance:
     - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -14462,6 +14437,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_UseNormalMap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_LightType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313747652427870487, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: -1154917587
       objectReference: {fileID: 0}
     - target: {fileID: 4919943702887944939, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}

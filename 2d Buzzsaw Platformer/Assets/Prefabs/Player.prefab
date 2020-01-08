@@ -506,7 +506,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   dashSpeed: 25
   dashPeriod: 0.17
-  verticalDashMultiplier: 1.125
+  verticalDashMultiplier: 1
   afterDashFreezePercentage: 0.4
 --- !u!114 &4517507718444942172
 MonoBehaviour:
@@ -544,7 +544,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   dashSpeed: 25
   dashPeriod: 0.17
-  verticalDashMultiplier: 1.125
+  verticalDashMultiplier: 1
   afterDashFreezePercentage: 0.4
 --- !u!114 &7164284323890934495
 MonoBehaviour:
@@ -582,7 +582,7 @@ MonoBehaviour:
   gameController: {fileID: 0}
   dashSpeed: 25
   dashPeriod: 0.17
-  verticalDashMultiplier: 1.125
+  verticalDashMultiplier: 1
   dashAngleBuffer: 0.0001
   afterDashFreezePercentage: 0.4
 --- !u!114 &5092642708707155202

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -335,16 +335,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4790024071583005110, guid: e7c3fab478df56945abd723d994bdfc0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790024071583005110, guid: e7c3fab478df56945abd723d994bdfc0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4790024071583005104, guid: e7c3fab478df56945abd723d994bdfc0,
         type: 3}
       propertyPath: nodeList.Array.size
@@ -355,6 +345,16 @@ PrefabInstance:
       propertyPath: nodeList.Array.data[0]
       value: 
       objectReference: {fileID: 1642140839}
+    - target: {fileID: 4790024071583005110, guid: e7c3fab478df56945abd723d994bdfc0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790024071583005110, guid: e7c3fab478df56945abd723d994bdfc0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c3fab478df56945abd723d994bdfc0, type: 3}
 --- !u!1001 &96920015
@@ -13560,12 +13560,12 @@ PrefabInstance:
     - target: {fileID: 6361587941301454559, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -13580,7 +13580,7 @@ PrefabInstance:
     - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
