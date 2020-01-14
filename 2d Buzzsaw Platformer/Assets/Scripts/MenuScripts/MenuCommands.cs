@@ -34,6 +34,13 @@ public class MenuCommands : MonoBehaviour
             gameController.LoadLevelByIndex(buildIndex);
         }
     }
+    public void UnlockLevelByIndex(int index)
+    {
+        if (!gameController.unlockedLevels.Contains(index))
+        {
+            gameController.unlockedLevels.Add(index);
+        }
+    }
     public void PlaySongByRelativeIndex(int indexRelation)
     {
         audioManager.PlaySongByRelativeIndex(indexRelation);

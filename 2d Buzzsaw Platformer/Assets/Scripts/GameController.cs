@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,8 @@ public class GameController : MonoBehaviour
     public PauseMenuCommands pauseMenuCommands;
     public bool loadMinimap = true;
     public bool initiateAudio;
+    public int[] exitToMenuLevels;
+    public List<int> unlockedLevels;
 
     public StoredOptionDictEntry[] storedOptionDefaultValues;
     public Dictionary<string, float> storedOptionValues = new Dictionary<string, float>();
@@ -257,6 +260,15 @@ public class GameController : MonoBehaviour
         canLoadNextLevel = true;
         //canRestartRun = true;
         //levelWon = true;
+        UnlockNextLevel();
+    }
+    void UnlockNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (!unlockedLevels.Contains(currentSceneIndex+1))
+        {
+            unlockedLevels.Add(currentSceneIndex+1);
+        }
     }
     void LevelChange()
     {
@@ -289,9 +301,25 @@ public class GameController : MonoBehaviour
         LoadLevelByIndex(0);
         ToggleGameCanvas(false);
     }
+    bool CheckIfExitToMenuLevel(int index)
+    {
+        if (exitToMenuLevels.Contains(index))
+        {
+            return true;
+        }
+        return false;
+    }
     void LoadLevelByRelativeIndex(int nextLevelRelativeIndex)//0 means restart level, 1 means go forward one, -1 means go back one
     {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + nextLevelRelativeIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + nextLevelRelativeIndex;
+
+        if (nextLevelRelativeIndex == 1 && CheckIfExitToMenuLevel(currentSceneIndex))
+        {
+            QuitToMainMenu();
+            return;
+        }
+
         LoadLevelByIndex(nextSceneIndex);
 
     }
