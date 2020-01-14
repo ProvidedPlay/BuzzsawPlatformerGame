@@ -9,7 +9,6 @@ public class LevelButton : MonoBehaviour
     public int levelNumber;
     public bool levelEnabled;
 
-    bool isInitialized;
     GameController gameController;
     TextMeshProUGUI buttonText;
     Button button;

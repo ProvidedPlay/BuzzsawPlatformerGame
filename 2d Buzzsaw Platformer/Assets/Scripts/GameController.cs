@@ -19,10 +19,12 @@ public class GameController : MonoBehaviour
     public bool loadMinimap = true;
     public bool initiateAudio;
     public int[] exitToMenuLevels;
-    public List<int> unlockedLevels;
+    public double bestRunTime;
 
+    public List<int> unlockedLevels;
     public StoredOptionDictEntry[] storedOptionDefaultValues;
     public Dictionary<string, float> storedOptionValues = new Dictionary<string, float>();
+    public Dictionary<int, double> bestLevelTimes = new Dictionary<int, double>();
     [HideInInspector] public float timeToggled;
     [HideInInspector] public bool gameOver = false;
     [HideInInspector] public bool showRunTime;
@@ -77,6 +79,13 @@ public class GameController : MonoBehaviour
         if ((Input.GetKeyDown("escape") || Input.GetKeyDown("joystick button 7")) && !inMainMenu)
         {
             TogglePauseMenu();
+        }
+        if ((Input.GetKeyDown("i")))
+        {
+            foreach (KeyValuePair<int,double> currentBestLevelTime in bestLevelTimes)
+            {
+                Debug.Log(currentBestLevelTime);
+            }
         }
         UpdateTimer();
         
@@ -261,6 +270,7 @@ public class GameController : MonoBehaviour
         //canRestartRun = true;
         //levelWon = true;
         UnlockNextLevel();
+        UpdateHighScore();
     }
     void UnlockNextLevel()
     {
@@ -293,6 +303,41 @@ public class GameController : MonoBehaviour
         //        QuitToMainMenu();
         //    }
         //}
+    }
+    public void UpdateHighScore()
+    {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+        double currentLevelTime = roundedLevelElapsedTime;
+        double currentRunTime = roundedGameElapsedTime;
+
+        UpdateRunHighScore(currentLevel, currentRunTime);
+        UpdateLevelHighScore(currentLevel, currentLevelTime);
+        
+    }
+    void UpdateRunHighScore(int currentLevel, double currentRunTime)//Update full run high score when you finish a run
+    {
+        if (showRunTime && CheckIfExitToMenuLevel(currentLevel))
+        {
+            if (bestRunTime == 0 || currentRunTime < bestRunTime)
+            {
+                bestRunTime = currentRunTime;
+            }
+        }
+    }
+    void UpdateLevelHighScore(int currentLevel, double currentLevelTime)//update level high score whenever you finish a level
+    {
+        if (!bestLevelTimes.ContainsKey(currentLevel))
+        {
+            bestLevelTimes.Add(currentLevel, currentLevelTime);
+            return;
+        }
+        else if (bestLevelTimes.ContainsKey(currentLevel))
+        {
+            if (currentLevelTime < bestLevelTimes[currentLevel])
+            {
+                bestLevelTimes[currentLevel] = currentLevelTime;
+            }
+        }
     }
     public void QuitToMainMenu()
     {
