@@ -8,6 +8,7 @@ public class DisplayHighScore : MonoBehaviour
 {
     public bool hasScoreText;
     public bool scoreUnlocked;
+    public bool isRunHighScore;
     public int levelIndex;
 
     GameController gameController;
@@ -38,20 +39,34 @@ public class DisplayHighScore : MonoBehaviour
     }
     void CheckIfHighScoreUnlocked()
     {
-        scoreUnlocked = gameController.bestLevelTimes.ContainsKey(levelIndex);
-        nameText.enabled = scoreUnlocked;
-        if (scoreText != null)
+        if (!isRunHighScore)
         {
-            scoreText.enabled = scoreUnlocked;
-            if (scoreUnlocked)
+            scoreUnlocked = gameController.bestLevelTimes.ContainsKey(levelIndex);
+            nameText.enabled = scoreUnlocked;
+            if (scoreText != null)
             {
-                DisplayCurrentHighScore();
+                scoreText.enabled = scoreUnlocked;
+                if (scoreUnlocked)
+                {
+                    DisplayCurrentLevelHighScore();
+                }
             }
+        }
+        if (isRunHighScore)
+        {
+            scoreUnlocked = gameController.bestRunTime == 0 ? false : true;
+
+            nameText.enabled = scoreUnlocked;
+            scoreText.enabled = scoreUnlocked;
         }
         
     }
-    void DisplayCurrentHighScore()
+    void DisplayCurrentLevelHighScore()
     {
         scoreText.text = gameController.bestLevelTimes[levelIndex].ToString();
+    }
+    void DisplayCurrentRunHighScore()
+    {
+        scoreText.text = gameController.bestRunTime.ToString();
     }
 }

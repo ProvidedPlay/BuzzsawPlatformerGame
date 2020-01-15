@@ -71,6 +71,10 @@ public class MenuCommands : MonoBehaviour
             audioManager.loopCurrentSong = loopButton.buttonActive;
         }
     }
+    public void ClearAllSaveData()
+    {
+        gameController.ClearAllSaveData();
+    }
     public void QuitGame()
     {
         Application.Quit();

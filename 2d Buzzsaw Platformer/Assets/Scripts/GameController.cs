@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour
 //    bool levelLost = false;
 //    bool levelWon = false;
     bool toggleStats = false;
+    bool shouldSaveGame;
     float levelElapsedTime = 0;
     float gameElapsedTime = 0;
     double roundedGameElapsedTime;
@@ -55,6 +56,7 @@ public class GameController : MonoBehaviour
         UnpackStoredOptionDictionary();
         InitiateAudioManager();
         InitiatePauseMenu();
+        LoadGameOnStart();
     }
     private void Start()
     {
@@ -108,6 +110,10 @@ public class GameController : MonoBehaviour
         }
         pauseMenuCommands = GameObject.FindGameObjectWithTag("PauseMenuCanvas").GetComponent<PauseMenuCommands>();
     }
+    void LoadGameOnStart()
+    {
+        LoadGame();
+    }
     public void ToggleGameCanvas(bool turnOn)
     {
         if (turnOn)
@@ -149,6 +155,27 @@ public class GameController : MonoBehaviour
                 pauseMenuCommands.PauseGame();
             return;
             }
+    }
+    public void SaveGame()
+    {
+        SaveSystem.SavePlayerData(this);
+    }
+    public void LoadGame()
+    {
+        PlayerData loadedData = SaveSystem.LoadPlayerData();
+        if ( loadedData!= null)
+        {
+            bestLevelTimes = loadedData.bestLevelTimes;
+            bestRunTime = loadedData.bestRunTime;
+            unlockedLevels = loadedData.unlockedLevels;
+        }
+    }
+    public void ClearAllSaveData()
+    {
+        bestLevelTimes.Clear();
+        bestRunTime = 0;
+        unlockedLevels.Clear();
+        SaveGame();
     }
     void ResetText()
     {
@@ -271,6 +298,11 @@ public class GameController : MonoBehaviour
         //levelWon = true;
         UnlockNextLevel();
         UpdateHighScore();
+        if (shouldSaveGame)
+        {
+            SaveGame();
+            shouldSaveGame = false;
+        }
     }
     void UnlockNextLevel()
     {
@@ -278,6 +310,7 @@ public class GameController : MonoBehaviour
         if (!unlockedLevels.Contains(currentSceneIndex+1))
         {
             unlockedLevels.Add(currentSceneIndex+1);
+            shouldSaveGame = true;
         }
     }
     void LevelChange()
@@ -321,6 +354,7 @@ public class GameController : MonoBehaviour
             if (bestRunTime == 0 || currentRunTime < bestRunTime)
             {
                 bestRunTime = currentRunTime;
+                shouldSaveGame = true;
             }
         }
     }
@@ -329,6 +363,7 @@ public class GameController : MonoBehaviour
         if (!bestLevelTimes.ContainsKey(currentLevel))
         {
             bestLevelTimes.Add(currentLevel, currentLevelTime);
+            shouldSaveGame = true;
             return;
         }
         else if (bestLevelTimes.ContainsKey(currentLevel))
@@ -336,6 +371,7 @@ public class GameController : MonoBehaviour
             if (currentLevelTime < bestLevelTimes[currentLevel])
             {
                 bestLevelTimes[currentLevel] = currentLevelTime;
+                shouldSaveGame = true;
             }
         }
     }
