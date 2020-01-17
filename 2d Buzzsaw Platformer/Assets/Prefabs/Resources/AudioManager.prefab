@@ -158,12 +158,12 @@ MonoBehaviour:
     volume: 0.7
     pitch: 0.858
   songs:
-  - name: 8 bit Song
-    clip: {fileID: 8300000, guid: c02f0d82f796a60429c3e9f384a03ec8, type: 3}
+  - name: The River
+    clip: {fileID: 8300000, guid: 542baeabc74b0d644b9b99a329048a36, type: 3}
     mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
       type: 2}
     source: {fileID: 0}
-    volume: 0.2
+    volume: 0.4
     pitch: 1
   - name: Ambient Music 1
     clip: {fileID: 8300000, guid: 6eff6061eec0e284a9a43a1dffa9eebc, type: 3}
@@ -171,6 +171,13 @@ MonoBehaviour:
       type: 2}
     source: {fileID: 0}
     volume: 0.5
+    pitch: 1
+  - name: Calahorra
+    clip: {fileID: 8300000, guid: 6e65161fc2649074fb4e94aa5cb6e752, type: 3}
+    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.3
     pitch: 1
   currentSong:
     name: 

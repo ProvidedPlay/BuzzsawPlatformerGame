@@ -39,6 +39,7 @@ public class MenuCommands : MonoBehaviour
         if (!gameController.unlockedLevels.Contains(index))
         {
             gameController.unlockedLevels.Add(index);
+            gameController.SaveGame();
         }
     }
     public void PlaySongByRelativeIndex(int indexRelation)

@@ -58,6 +58,7 @@ public class DisplayHighScore : MonoBehaviour
 
             nameText.enabled = scoreUnlocked;
             scoreText.enabled = scoreUnlocked;
+            DisplayCurrentRunHighScore();
         }
         
     }
@@ -67,6 +68,11 @@ public class DisplayHighScore : MonoBehaviour
     }
     void DisplayCurrentRunHighScore()
     {
+        
         scoreText.text = gameController.bestRunTime.ToString();
+        if (gameController.bestRunTime == 0)
+        {
+            scoreText.text = "";
+        }
     }
 }
