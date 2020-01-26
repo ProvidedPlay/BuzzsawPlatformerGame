@@ -20,6 +20,7 @@ public class Jump : MoveAbility
                 InterruptAbilities();
                 InterruptSwitches();
                 player.PlaySound("Jump Sound");
+                player.SetPlayerAnimationJump();
                 //player.rb.velocity = Vector2.up * player.jumpStrength;
                 player.rb.velocity = Vector2.up * player.jumpStrength * Mathf.Sign(player.previousGravityScale);
 

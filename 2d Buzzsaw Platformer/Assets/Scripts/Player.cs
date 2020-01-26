@@ -26,10 +26,12 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool canWalk;
     [HideInInspector] public bool gravityReversed;
     [HideInInspector] public bool delayedJumpTimerActive;
+    [HideInInspector] public bool playerIsWalking;
     [HideInInspector] public AudioManager audioManager;
     [HideInInspector] public List<Switch> levelSwitches;
     [HideInInspector] public GameObject[] levelSwitchObjects;
     [HideInInspector] public Light2D levelLight;
+    [HideInInspector] public DashEcho dashEcho;
 
     [HideInInspector] public Rigidbody2D rb;
     Animator anim;
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
     SpriteRenderer sp;
     Collider2D col;
     Light2D playerLight;
+    
     
 
 
@@ -50,6 +53,7 @@ public class Player : MonoBehaviour
         col = GetComponent<Collider2D>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         playerLight = GameObject.FindGameObjectWithTag("PlayerLight").GetComponent<Light2D>();
+        dashEcho = gameObject.GetComponentInChildren<DashEcho>();
         FindLevelLight();
         FindLevelSwitches();
     }
@@ -99,6 +103,8 @@ public class Player : MonoBehaviour
         Vector2 newPosition = rb.position;
         newPosition.x = newPosition.x + horizontalMovement;
         rb.position = newPosition;
+        SetPlayerAnimationWalk(currentHorizontal);
+        FacePlayer(currentHorizontal);
     }
     public void ActivateDelayedJumpTimer()
     {
@@ -127,6 +133,7 @@ public class Player : MonoBehaviour
     void PlayerDead()
     {
         playerIsDead = true;
+        dashEcho.DeactivateDashEcho();
         anim.SetTrigger("playerDead");
         controller.GameOver();
     }
@@ -136,11 +143,40 @@ public class Player : MonoBehaviour
         newScale.y = -transform.localScale.y;
         transform.localScale = newScale;
     }
+    public void FacePlayer(float horizontalMovement)
+    {
+        if(horizontalMovement > 0 && sp.flipX)
+        {
+            sp.flipX = false;
+        }
+        else if (horizontalMovement < 0 && !sp.flipX)
+        {
+            sp.flipX = true;
+        }
+    }
+    public void SetPlayerAnimationWalk(float walkValue)
+    {
+        bool playerIsCurrentlyWalking = walkValue == 0 ? false : true;
+        if (playerIsCurrentlyWalking != playerIsWalking)
+        {
+            anim.SetBool("playerIsWalking", playerIsCurrentlyWalking);
+            playerIsWalking = playerIsCurrentlyWalking;
+        }
+    }
+    public void SetPlayerAnimationGrounded(bool isGrounded)
+    {
+        anim.SetBool("playerGrounded", isGrounded);
+    }
+    public void SetPlayerAnimationJump()
+    {
+        anim.SetTrigger("playerJump");
+    }
     void PlayerReachedGoal()
     {
         anim.enabled = false;
         sp.enabled = false;
         playerLight.enabled = false;
+        dashEcho.DeactivateDashEcho();
         playerReachedGoal = true;
         PlaySound("Win Sound");
         controller.GameOver();

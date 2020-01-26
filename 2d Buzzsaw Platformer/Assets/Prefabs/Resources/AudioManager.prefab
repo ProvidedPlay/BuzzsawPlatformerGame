@@ -157,20 +157,48 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 0.7
     pitch: 0.858
+  - name: Secret Chime 1
+    clip: {fileID: 8300000, guid: 1085345269a65474da74f2832882d25a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 0.66
+  - name: Secret Chime 2
+    clip: {fileID: 8300000, guid: 1085345269a65474da74f2832882d25a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 0.6
+  - name: Secret Chime 3
+    clip: {fileID: 8300000, guid: 1085345269a65474da74f2832882d25a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 0.54
+  - name: Secret Chime 4
+    clip: {fileID: 8300000, guid: 1085345269a65474da74f2832882d25a, type: 3}
+    mixerGroup: {fileID: 6344001331691510208, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 0.48
   songs:
+  - name: Ambient Music
+    clip: {fileID: 8300000, guid: 6eff6061eec0e284a9a43a1dffa9eebc, type: 3}
+    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1
   - name: The River
     clip: {fileID: 8300000, guid: 542baeabc74b0d644b9b99a329048a36, type: 3}
     mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
       type: 2}
     source: {fileID: 0}
     volume: 0.4
-    pitch: 1
-  - name: Ambient Music 1
-    clip: {fileID: 8300000, guid: 6eff6061eec0e284a9a43a1dffa9eebc, type: 3}
-    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
-      type: 2}
-    source: {fileID: 0}
-    volume: 0.5
     pitch: 1
   - name: Calahorra
     clip: {fileID: 8300000, guid: 6e65161fc2649074fb4e94aa5cb6e752, type: 3}

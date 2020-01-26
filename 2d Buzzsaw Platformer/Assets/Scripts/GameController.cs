@@ -18,7 +18,9 @@ public class GameController : MonoBehaviour
     public PauseMenuCommands pauseMenuCommands;
     public bool loadMinimap = true;
     public bool initiateAudio;
+    public bool initiateLoadSystem;
     public int[] exitToMenuLevels;
+    public int[] dontUnlockNextLevelLevels;
     public double bestRunTime;
 
     public List<int> unlockedLevels;
@@ -158,16 +160,22 @@ public class GameController : MonoBehaviour
     }
     public void SaveGame()
     {
-        SaveSystem.SavePlayerData(this);
+        if (initiateLoadSystem)
+        {
+            SaveSystem.SavePlayerData(this);
+        }
     }
     public void LoadGame()
     {
-        PlayerData loadedData = SaveSystem.LoadPlayerData();
-        if ( loadedData!= null)
+        if (initiateLoadSystem)
         {
-            bestLevelTimes = loadedData.bestLevelTimes;
-            bestRunTime = loadedData.bestRunTime;
-            unlockedLevels = loadedData.unlockedLevels;
+            PlayerData loadedData = SaveSystem.LoadPlayerData();
+            if (loadedData != null)
+            {
+                bestLevelTimes = loadedData.bestLevelTimes;
+                bestRunTime = loadedData.bestRunTime;
+                unlockedLevels = loadedData.unlockedLevels;
+            }
         }
     }
     public void ClearAllSaveData()
@@ -307,7 +315,7 @@ public class GameController : MonoBehaviour
     void UnlockNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (!unlockedLevels.Contains(currentSceneIndex+1))
+        if (!unlockedLevels.Contains(currentSceneIndex+1)&& !dontUnlockNextLevelLevels.Contains(currentSceneIndex))
         {
             unlockedLevels.Add(currentSceneIndex+1);
             shouldSaveGame = true;
