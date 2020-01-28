@@ -1,0 +1,29 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:102c8abaa9744ef2e19f7925ecbfdd40:f0672cdbe2627526a2f72d469ab4a21e:8b9046b082ee764b2712af96927ffaa3$
+#
+:format=40300
+:texture=backgrounds.png
+:size=1024x1024
+:normalmap=backgrounds_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Brown;1;831;192;192; 0.5;0.5; 0;0;0;0
+Deep Green;1;637;192;192; 0.5;0.5; 0;0;0;0
+Dull Slate;1;443;192;192; 0.5;0.5; 0;0;0;0
+Green;1;249;192;192; 0.5;0.5; 0;0;0;0
+Grey Background;1;55;192;192; 0.5;0.5; 0;0;0;0
+Indian Red;195;831;192;192; 0.5;0.5; 0;0;0;0
+Mud Red;389;831;192;192; 0.5;0.5; 0;0;0;0
+Rabbit Brown;583;831;192;192; 0.5;0.5; 0;0;0;0
+Rabbit Brown2;777;831;192;192; 0.5;0.5; 0;0;0;0
+SlateBackground;195;637;192;192; 0.5;0.5; 0;0;0;0
+Teal Background (1);195;443;192;192; 0.5;0.5; 0;0;0;0
+Teal Background;195;249;192;192; 0.5;0.5; 0;0;0;0
+White;195;55;192;192; 0.5;0.5; 0;0;0;0

@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b6dc30fed758a544b85b3e3fd798b664
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/NewArtMaps/Level1Dark 1.unity
+    guid: ae1d93080a3d48540b22c8cd34e99ab9
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 2f7cf7881182e84419275bafa63b3d97
+    path: Assets/Scenes/NewArtMaps/Level2Dark 1.unity
+    guid: a54c538ceffed614a9affef6aa87c1fa
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 4539b006ff338984b9b1ea64514c9403
+    path: Assets/Scenes/NewArtMaps/Level3Dark.unity
+    guid: 98cd4af14dc88ba46b606e6576703468
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: bd1900999f61fb04a9effcc821726767
+    path: Assets/Scenes/NewArtMaps/Level4Dark.unity
+    guid: bf614269145fdcf4ea61ad92911636f3
   - enabled: 1
     path: Assets/Scenes/Level5.unity
     guid: 0511dc27675632c4a9c2d55d416dfcfe
@@ -120,11 +120,11 @@ EditorBuildSettings:
     path: Assets/Scenes/DarkMode/Level2Dark.unity
     guid: 7e2aabfb54f1e2a49ac98f7eb81ceb45
   - enabled: 1
-    path: Assets/Scenes/DarkMode/Level3Dark.unity
-    guid: 98cd4af14dc88ba46b606e6576703468
+    path: Assets/Scenes/DarkMode/Level3Dark 1.unity
+    guid: f3a4e7ed8ec67384bad3a70ba0a77c1c
   - enabled: 1
-    path: Assets/Scenes/DarkMode/Level4Dark.unity
-    guid: bf614269145fdcf4ea61ad92911636f3
+    path: Assets/Scenes/DarkMode/Level4Dark 1.unity
+    guid: 327bb9fc9c93f684fbcf95cc2f73c932
   - enabled: 1
     path: Assets/Scenes/DarkMode/Level5Dark.unity
     guid: 0e08ab9cfbb5cb449af03aa5e8fe54ca
@@ -215,4 +215,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DarkMode/BsideLevel27Dark.unity
     guid: 9be42875950cbb2438031451ae9883e9
+  - enabled: 0
+    path: Assets/Scenes/Level1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Level2.unity
+    guid: 2f7cf7881182e84419275bafa63b3d97
+  - enabled: 0
+    path: Assets/Scenes/Level3.unity
+    guid: 4539b006ff338984b9b1ea64514c9403
+  - enabled: 0
+    path: Assets/Scenes/Level4.unity
+    guid: bd1900999f61fb04a9effcc821726767
   m_configObjects: {}
