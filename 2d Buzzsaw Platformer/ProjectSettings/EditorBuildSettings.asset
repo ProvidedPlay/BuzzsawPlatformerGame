@@ -21,23 +21,23 @@ EditorBuildSettings:
     path: Assets/Scenes/NewArtMaps/Level4Dark.unity
     guid: bf614269145fdcf4ea61ad92911636f3
   - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: 0511dc27675632c4a9c2d55d416dfcfe
+    path: Assets/Scenes/NewArtMaps/Level5Dark 1.unity
+    guid: 567e56f5798877849a7221197c07b272
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
-    guid: 0db689a49bdef024e97c0d645ff921c7
+    path: Assets/Scenes/NewArtMaps/Level6Dark 1.unity
+    guid: c4226a9fac033a4498c47d0c71d28feb
   - enabled: 1
-    path: Assets/Scenes/Level8.unity
-    guid: 08d139e58c8569f4aadfd4a0653b9189
+    path: Assets/Scenes/NewArtMaps/Level8Dark 1.unity
+    guid: 6ff18f0eaa5bfcf42917f56f4a36b5c7
   - enabled: 1
-    path: Assets/Scenes/Level9.unity
-    guid: fa7865739671cc44090b9134ecf53b48
+    path: Assets/Scenes/NewArtMaps/Level9Dark 1.unity
+    guid: 74032abc972650446960c35e3e5f474b
   - enabled: 1
-    path: Assets/Scenes/Level10.unity
-    guid: 62bab55664527554b8f1c3a130e14181
+    path: Assets/Scenes/NewArtMaps/Level10Dark 1.unity
+    guid: 6fa0f2219c0d5f54b8179a33c11ac81f
   - enabled: 1
-    path: Assets/Scenes/Level11.unity
-    guid: 03b8878e32e78794293b352a7d84152e
+    path: Assets/Scenes/NewArtMaps/Level11Dark 1.unity
+    guid: bb96ef8ac726cc044805a48472f8272f
   - enabled: 1
     path: Assets/Scenes/Level12.unity
     guid: 1b9f43f3f449ad64f80f026fa7816ce0
@@ -227,4 +227,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level4.unity
     guid: bd1900999f61fb04a9effcc821726767
+  - enabled: 0
+    path: Assets/Scenes/Level5.unity
+    guid: 0511dc27675632c4a9c2d55d416dfcfe
+  - enabled: 0
+    path: Assets/Scenes/Level6.unity
+    guid: 0db689a49bdef024e97c0d645ff921c7
+  - enabled: 0
+    path: Assets/Scenes/Level8.unity
+    guid: 08d139e58c8569f4aadfd4a0653b9189
+  - enabled: 0
+    path: Assets/Scenes/Level9.unity
+    guid: fa7865739671cc44090b9134ecf53b48
+  - enabled: 0
+    path: Assets/Scenes/Level10.unity
+    guid: 62bab55664527554b8f1c3a130e14181
+  - enabled: 0
+    path: Assets/Scenes/Level11.unity
+    guid: 03b8878e32e78794293b352a7d84152e
   m_configObjects: {}

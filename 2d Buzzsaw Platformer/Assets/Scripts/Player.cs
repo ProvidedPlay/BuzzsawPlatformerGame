@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public float delayedJumpPeriod;
     public MoveAbility[] moveAbilities;
     public string[] delayedActionAbilities;
+    public GameObject spriteHandler;
     [HideInInspector] public bool tronTailActive;
     [HideInInspector] public bool inTronZone;
     [HideInInspector] public bool globalLightOn;
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public GameObject[] levelSwitchObjects;
     [HideInInspector] public Light2D levelLight;
     [HideInInspector] public DashEcho dashEcho;
-
+    [HideInInspector] public bool flipX;
     [HideInInspector] public Rigidbody2D rb;
     Animator anim;
     GameController controller;
@@ -47,9 +48,9 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = spriteHandler.GetComponent<Animator>();
         controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        sp = GetComponent<SpriteRenderer>();
+        sp = spriteHandler.GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         playerLight = GameObject.FindGameObjectWithTag("PlayerLight").GetComponent<Light2D>();
@@ -145,13 +146,21 @@ public class Player : MonoBehaviour
     }
     public void FacePlayer(float horizontalMovement)
     {
-        if(horizontalMovement > 0 && sp.flipX)
+        if(horizontalMovement > 0 && flipX)//(horizontalMovement > 0 && sp.flipX)
         {
-            sp.flipX = false;
+            //sp.flipX = false;
+            flipX = false;
+            Vector3 newScale = spriteHandler.transform.localScale;
+            newScale.x = 1;
+            spriteHandler.transform.localScale = newScale;
         }
-        else if (horizontalMovement < 0 && !sp.flipX)
+        else if (horizontalMovement < 0 && !flipX)//(horizontalMovement < 0 && !sp.flipX)
         {
-            sp.flipX = true;
+            //sp.flipX = true;
+            flipX = true;
+            Vector3 newScale = spriteHandler.transform.localScale;
+            newScale.x = -1;
+            spriteHandler.transform.localScale = newScale;
         }
     }
     public void SetPlayerAnimationWalk(float walkValue)
