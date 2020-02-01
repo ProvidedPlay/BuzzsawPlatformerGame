@@ -3677,6 +3677,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f2db4c5a923dc4d4f9860aa2b7fdcd9c, type: 2}
+    - target: {fileID: 1955574263738542508, guid: f53e70742b54a464ba08110d951baf59,
+        type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f53e70742b54a464ba08110d951baf59, type: 3}
 --- !u!1 &1039642781

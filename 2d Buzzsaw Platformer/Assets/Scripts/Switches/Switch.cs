@@ -15,6 +15,7 @@ public abstract class Switch : MonoBehaviour
     public string[] interruptableAbilityNames;
     public float deactivationCheckTimer = 0;
     public float activationCheckTimer = 0;
+    public GameObject switchLightHolder;
     [HideInInspector] public bool switchActive;
     [HideInInspector] public bool stoppingMotion;
     [HideInInspector] public SpriteRenderer sp;
@@ -55,10 +56,15 @@ public abstract class Switch : MonoBehaviour
     public virtual void UpdateSprite()
     {
         sp.sprite = switchActive ? activeSprite : inActiveSprite;
+        UpdateSwitchPackageLights();
     }
     public virtual void UpdateSwitchLight()
     {
 
+    }
+    public virtual void UpdateSwitchPackageLights()
+    {
+        ToggleSwitchLights(!switchActive);
     }
     public virtual void ActivateSwitch()
     {
@@ -75,6 +81,13 @@ public abstract class Switch : MonoBehaviour
         {
             switchActive = false;
             UpdateSprite();
+        }
+    }
+    public virtual void ToggleSwitchLights(bool toggleOn)
+    {
+        if (switchLightHolder != null)
+        {
+            switchLightHolder.SetActive(toggleOn);
         }
     }
     public void InterruptAbilities()

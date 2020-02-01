@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1c53a83330877fc48bbadc050639e81c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2624737152739864998, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  m_Sprite: {fileID: -6425088025573883464, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -116,14 +116,16 @@ MonoBehaviour:
   resetOnGround: 0
   flipLinkedSwitch: 0
   linkedSwitch: 1
+  linkedLight: 0
   activateByDirection: 1
-  activeSprite: {fileID: 2624737152739864998, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  activeSprite: {fileID: -6425088025573883464, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
-  inActiveSprite: {fileID: 8733329657037584862, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  inActiveSprite: {fileID: -5680113164813478623, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   interruptableAbilityNames: []
   deactivationCheckTimer: 0
   activationCheckTimer: 0
+  switchLightHolder: {fileID: 0}
   switchActive: 0
   stoppingMotion: 0
   sp: {fileID: 0}

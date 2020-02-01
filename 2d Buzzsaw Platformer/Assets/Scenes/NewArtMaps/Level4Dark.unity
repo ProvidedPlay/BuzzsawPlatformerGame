@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2625,6 +2625,11 @@ PrefabInstance:
     - target: {fileID: -5845582964976835384, guid: 7d78f133590b24a42918f71d25201de4,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5845582964976835384, guid: 7d78f133590b24a42918f71d25201de4,
+        type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2159433574430002648, guid: 7d78f133590b24a42918f71d25201de4,
@@ -8803,11 +8808,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup_ DoubleJump
       objectReference: {fileID: 0}
-    - target: {fileID: 1955574263738542508, guid: f53e70742b54a464ba08110d951baf59,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2159433574430002648, guid: f53e70742b54a464ba08110d951baf59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8861,6 +8861,16 @@ PrefabInstance:
     - target: {fileID: 2159433574430002648, guid: f53e70742b54a464ba08110d951baf59,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955574263738542508, guid: f53e70742b54a464ba08110d951baf59,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955574263738542508, guid: f53e70742b54a464ba08110d951baf59,
+        type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11854,14 +11864,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: doubleJumpSpeedThreshold
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3623268968961100869, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: doubleJumpSpeedThreshold
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2272837427515543724, guid: 74696facd5ab8194ba14a574ca48dac0,

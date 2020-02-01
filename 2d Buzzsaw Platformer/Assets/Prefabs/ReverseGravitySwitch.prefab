@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1c53a83330877fc48bbadc050639e81c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7834314852814175136, guid: bb1cce5eb1448094fa47d3d7dfc833de,
+  m_Sprite: {fileID: 7294486501317956129, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -115,9 +115,11 @@ MonoBehaviour:
   resetOnGround: 0
   flipLinkedSwitch: 1
   linkedSwitch: 1
-  activeSprite: {fileID: 5201287833566040158, guid: bb1cce5eb1448094fa47d3d7dfc833de,
+  linkedLight: 0
+  activateByDirection: 0
+  activeSprite: {fileID: -7385443975045780627, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
-  inActiveSprite: {fileID: -7834314852814175136, guid: bb1cce5eb1448094fa47d3d7dfc833de,
+  inActiveSprite: {fileID: 7294486501317956129, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   interruptableAbilityNames:
   - Jump
@@ -126,6 +128,8 @@ MonoBehaviour:
   - Dash Improved
   - Dash Ultra
   deactivationCheckTimer: 0
+  activationCheckTimer: 0
+  switchLightHolder: {fileID: 0}
   switchActive: 0
   stoppingMotion: 0
   sp: {fileID: 0}
@@ -133,6 +137,7 @@ MonoBehaviour:
   interruptableAbilities: []
   col: {fileID: 0}
   gameController: {fileID: 0}
+  tronTail: {fileID: 0}
   snapMotionSpeed: 25
   stopMotionLength: 0.1
   deactivationCheckPeriod: 0.03

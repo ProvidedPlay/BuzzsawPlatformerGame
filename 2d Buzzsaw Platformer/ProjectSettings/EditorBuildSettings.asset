@@ -39,17 +39,17 @@ EditorBuildSettings:
     path: Assets/Scenes/NewArtMaps/Level11Dark 1.unity
     guid: bb96ef8ac726cc044805a48472f8272f
   - enabled: 1
-    path: Assets/Scenes/Level12.unity
-    guid: 1b9f43f3f449ad64f80f026fa7816ce0
+    path: Assets/Scenes/NewArtMaps/Level12Dark 1.unity
+    guid: 58945a57f6a80f6458ac444664e32552
   - enabled: 1
-    path: Assets/Scenes/Level13.unity
-    guid: 7c409ed96254282408ec8adb392303ab
+    path: Assets/Scenes/NewArtMaps/Level13Dark 1.unity
+    guid: 235a2f9e3ba32b046891c391a2b8b326
   - enabled: 1
-    path: Assets/Scenes/Level14.unity
-    guid: bf95953f4ff866e4c8c3e318e2992464
+    path: Assets/Scenes/NewArtMaps/Level14Dark 1.unity
+    guid: 883181af3432e8841b88f39faf5f6a10
   - enabled: 1
-    path: Assets/Scenes/Level15.unity
-    guid: 4792158d2ff54bc47b74c4895b705ae4
+    path: Assets/Scenes/NewArtMaps/Level15Dark 1.unity
+    guid: 9949df147d503b2438550a141e33b056
   - enabled: 1
     path: Assets/Scenes/Level16.unity
     guid: c2bb8b4adba91e943ab98092f0b8c157
@@ -245,4 +245,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level11.unity
     guid: 03b8878e32e78794293b352a7d84152e
+  - enabled: 0
+    path: Assets/Scenes/Level12.unity
+    guid: 1b9f43f3f449ad64f80f026fa7816ce0
+  - enabled: 0
+    path: Assets/Scenes/Level13.unity
+    guid: 7c409ed96254282408ec8adb392303ab
+  - enabled: 0
+    path: Assets/Scenes/Level14.unity
+    guid: bf95953f4ff866e4c8c3e318e2992464
+  - enabled: 0
+    path: Assets/Scenes/Level15.unity
+    guid: 4792158d2ff54bc47b74c4895b705ae4
   m_configObjects: {}

@@ -3,22 +3,31 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites.tpsheet
+- Assets/Sprites/EnemySprites/Spikes/Spikes.tpsheet
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes.tpsheet
 - Assets/Sprites/PlayerSprite/playersprites.tpsheet
+- Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups.tpsheet
+- Assets/Sprites/SwitchSprites/WithNormals/Switches.tpsheet
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds.tpsheet
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites.png
+- Assets/Sprites/EnemySprites/Spikes/Spikes.png
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes.png
 - Assets/Sprites/PlayerSprite/playersprites.png
+- Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups.png
+- Assets/Sprites/SwitchSprites/WithNormals/Switches.png
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds.png
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites_n.png
+- Assets/Sprites/EnemySprites/Spikes/Spikes_n.png
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes_n.png
 - Assets/Sprites/PlayerSprite/playersprites_n.png
+- Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups_n.png
+- Assets/Sprites/SwitchSprites/WithNormals/Switches_n.png
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds_n.png
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails_n.png
 enableDebugOutput: 0

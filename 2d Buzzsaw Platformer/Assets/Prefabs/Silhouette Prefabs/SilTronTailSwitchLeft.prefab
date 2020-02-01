@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9139284524350742440}
   - component: {fileID: -2748997674046160470}
   m_Layer: 0
-  m_Name: TronTailSwitchLeft 1
+  m_Name: SilTronTailSwitchLeft
   m_TagString: Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1c53a83330877fc48bbadc050639e81c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 1431632675
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -8012060449109264311, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  m_Sprite: {fileID: -6541653548877226143, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,13 +118,14 @@ MonoBehaviour:
   linkedSwitch: 1
   linkedLight: 0
   activateByDirection: 1
-  activeSprite: {fileID: -8012060449109264311, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  activeSprite: {fileID: -6541653548877226143, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
-  inActiveSprite: {fileID: 3065902839233388426, guid: 64a91146022216c4ba33ebd58aec2bc7,
+  inActiveSprite: {fileID: -8344808065761944966, guid: 9a6a8731d269cd746b70d2442b6a6821,
     type: 3}
   interruptableAbilityNames: []
   deactivationCheckTimer: 0
   activationCheckTimer: 0
+  switchLightHolder: {fileID: 0}
   switchActive: 0
   stoppingMotion: 0
   sp: {fileID: 0}
