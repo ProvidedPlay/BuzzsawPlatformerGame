@@ -1,0 +1,22 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:142df1cea25c65f51f019527a400bfb2:73940f1392373db5b1dfa5fd04086f9c:90ec1afe79ecac9fb436843b0e515de8$
+#
+:format=40300
+:texture=Halfsaws.png
+:size=512x1024
+:normalmap=Halfsaws_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Half Saw-0;0;832;192;192; 0.5;0.5; 0;0;0;0
+Half Saw-1;192;832;192;192; 0.5;0.5; 0;0;0;0
+Half Saw-2;0;640;192;192; 0.5;0.5; 0;0;0;0
+Half Saw-3;192;640;192;192; 0.5;0.5; 0;0;0;0
+Half Saw-4;0;448;192;192; 0.5;0.5; 0;0;0;0
+Half Saw-5;192;448;192;192; 0.5;0.5; 0;0;0;0

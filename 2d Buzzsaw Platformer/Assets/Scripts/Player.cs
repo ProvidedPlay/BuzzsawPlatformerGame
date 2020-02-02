@@ -244,7 +244,10 @@ public class Player : MonoBehaviour
                     levelSwitch.switchActive = true;
                     if (levelSwitch.flipLinkedSwitch)
                     {
-                        levelSwitch.sp.flipY = !levelSwitch.sp.flipY;
+                        //levelSwitch.sp.flipY = !levelSwitch.sp.flipY;
+                        Vector3 newScale = levelSwitch.transform.localScale;
+                        newScale.y = -levelSwitch.transform.localScale.y;
+                        levelSwitch.transform.localScale = newScale;
                     }
                     levelSwitch.UpdateSprite();
                     levelSwitch.deactivationCheckTimer = 0;

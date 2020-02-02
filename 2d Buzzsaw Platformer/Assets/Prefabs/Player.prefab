@@ -302,6 +302,7 @@ MonoBehaviour:
   levelSwitchObjects: []
   levelLight: {fileID: 0}
   dashEcho: {fileID: 0}
+  flipX: 0
   rb: {fileID: 3623268968961100894}
 --- !u!70 &3623268968961100891
 CapsuleCollider2D:

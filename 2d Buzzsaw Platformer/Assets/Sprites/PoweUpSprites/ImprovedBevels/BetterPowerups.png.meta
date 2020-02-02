@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: b306839dc2b38cc41aefb01dd1b50c04
+guid: d6630c60eb1820541a36c9564abdc00d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8809251635782325883
-    second: Half Saw_0
+      213: 7780171433668130768
+    second: Dash Improved Powerup Beveled Improved (1)
   - first:
-      213: -5137634752924145392
-    second: Half Saw_1
+      213: -5271170768811459976
+    second: Dash Powerup BeveledImproved
   - first:
-      213: 3760342343048823805
-    second: Half Saw_2
+      213: 2380078345075469162
+    second: Dash Ultra Powerup Beveled Improved (1)
   - first:
-      213: -474507575515717923
-    second: Half Saw_3
+      213: -8405799251424001993
+    second: Double Jump Powerup Beveled clone (1)
   - first:
-      213: 7961785723680536186
-    second: Half Saw_4
-  - first:
-      213: 7904548987647243597
-    second: Half Saw_5
+      213: 5630046091330082493
+    second: Powerup container
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,10 +57,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 192
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -140,127 +137,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Half Saw_0
+      name: Dash Improved Powerup Beveled Improved (1)
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 832
         width: 192
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 86129ec56175c3b4099394b1623f2591
-      internalID: 8809251635782325883
+      spriteID: 
+      internalID: 7780171433668130768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Half Saw_1
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de4d3cc5f6f905444bf2d3e2a1ff4375
-      internalID: -5137634752924145392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Half Saw_2
+      name: Dash Powerup BeveledImproved
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 640
         width: 192
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9c1dac5204d868840ba845f196bfef99
-      internalID: 3760342343048823805
+      spriteID: 
+      internalID: -5271170768811459976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Half Saw_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d342d23029586048b65c82fa3efa958
-      internalID: -474507575515717923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Half Saw_4
+      name: Dash Ultra Powerup Beveled Improved (1)
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 448
         width: 192
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e25ab60300f69b94ebbaf6528d048dda
-      internalID: 7961785723680536186
+      spriteID: 
+      internalID: 2380078345075469162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Half Saw_5
+      name: Double Jump Powerup Beveled clone (1)
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 0
+        y: 256
         width: 192
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2ceffac6eb7e6ac4fa0b76205313a592
-      internalID: 7904548987647243597
+      spriteID: 
+      internalID: -8405799251424001993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerup container
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5630046091330082493
       vertices: []
       indices: 
       edges: []

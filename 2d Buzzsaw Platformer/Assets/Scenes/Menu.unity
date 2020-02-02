@@ -27044,7 +27044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.1882353}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
@@ -27052,7 +27052,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 6723963429988506304, guid: c5b812ec587e995458e30c348f4bbbdb,
+  m_Sprite: {fileID: 4546653002333955648, guid: c5b812ec587e995458e30c348f4bbbdb,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -33792,7 +33792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.1882353}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
@@ -33800,7 +33800,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 6723963429988506304, guid: c5b812ec587e995458e30c348f4bbbdb,
+  m_Sprite: {fileID: 4546653002333955648, guid: c5b812ec587e995458e30c348f4bbbdb,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -56291,7 +56291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.1882353}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
@@ -56299,7 +56299,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 6723963429988506304, guid: c5b812ec587e995458e30c348f4bbbdb,
+  m_Sprite: {fileID: 4546653002333955648, guid: c5b812ec587e995458e30c348f4bbbdb,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
