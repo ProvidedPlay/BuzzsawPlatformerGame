@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:b1f669523305015eec52d824ce4a740a:670538b2d69974b5c9ba4d66ec8fac15:c271facb4e602f43738cf09877b28b76$
+#
+:format=40300
+:texture=WintileBeveled.png
+:size=256x256
+:normalmap=WintileBeveled_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Winpoint;0;64;192;192; 0.5;0.5; 0;0;0;0

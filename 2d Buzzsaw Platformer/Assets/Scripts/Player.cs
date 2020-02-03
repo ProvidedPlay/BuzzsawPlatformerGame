@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public AudioManager audioManager;
     [HideInInspector] public List<Switch> levelSwitches;
     [HideInInspector] public GameObject[] levelSwitchObjects;
-    [HideInInspector] public Light2D levelLight;
+    public Light2D levelLight;
     [HideInInspector] public DashEcho dashEcho;
     [HideInInspector] public bool flipX;
     [HideInInspector] public Rigidbody2D rb;

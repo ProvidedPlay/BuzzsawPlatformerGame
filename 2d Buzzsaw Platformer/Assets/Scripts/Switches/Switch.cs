@@ -10,6 +10,7 @@ public abstract class Switch : MonoBehaviour
     public bool linkedSwitch;
     public bool linkedLight;
     public bool activateByDirection;
+    public bool switchIsTronTail;
     public Sprite activeSprite;
     public Sprite inActiveSprite;
     public string[] interruptableAbilityNames;
@@ -64,7 +65,9 @@ public abstract class Switch : MonoBehaviour
     }
     public virtual void UpdateSwitchPackageLights()
     {
-        ToggleSwitchLights(!switchActive);
+        bool turnOn;
+        turnOn = switchIsTronTail == true ? switchActive : !switchActive; 
+        ToggleSwitchLights(turnOn);
     }
     public virtual void ActivateSwitch()
     {

@@ -12,6 +12,7 @@ tpsheetFileNames:
 - Assets/Sprites/SwitchSprites/WithNormals/Switches.tpsheet
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds.tpsheet
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails.tpsheet
+- Assets/Sprites/TileSprites/WinTile/WithNormals/WintileBeveled.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/EnemySprites/Blade/Halfsaws/WithNormals/Halfsaws.png
@@ -24,6 +25,7 @@ textureFileNames:
 - Assets/Sprites/SwitchSprites/WithNormals/Switches.png
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds.png
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails.png
+- Assets/Sprites/TileSprites/WinTile/WithNormals/WintileBeveled.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 - Assets/Sprites/EnemySprites/Blade/Halfsaws/WithNormals/Halfsaws_n.png
@@ -36,4 +38,5 @@ normalmapFileNames:
 - Assets/Sprites/SwitchSprites/WithNormals/Switches_n.png
 - Assets/Sprites/TileSprites/Background/WithNormals/backgrounds_n.png
 - Assets/Sprites/TileSprites/BladeRail/WithNormals/BladeRails_n.png
+- Assets/Sprites/TileSprites/WinTile/WithNormals/WintileBeveled_n.png
 enableDebugOutput: 0
