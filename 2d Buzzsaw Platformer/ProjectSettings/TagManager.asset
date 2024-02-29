@@ -61,6 +61,12 @@ TagManager:
   - name: Silhouetted
     uniqueID: 1431632675
     locked: 0
+  - name: TronTail
+    uniqueID: 3014449
+    locked: 0
   - name: Foreground
     uniqueID: 3140049709
+    locked: 0
+  - name: AlwaysDarkForeground
+    uniqueID: 2201545863
     locked: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,9 +18,15 @@ public class GameController : MonoBehaviour
     public PauseMenuCommands pauseMenuCommands;
     public bool loadMinimap = true;
     public bool initiateAudio;
+    public bool initiateLoadSystem;
+    public int[] exitToMenuLevels;
+    public int[] dontUnlockNextLevelLevels;
+    public double bestRunTime;
 
+    public List<int> unlockedLevels;
     public StoredOptionDictEntry[] storedOptionDefaultValues;
     public Dictionary<string, float> storedOptionValues = new Dictionary<string, float>();
+    public Dictionary<int, double> bestLevelTimes = new Dictionary<int, double>();
     [HideInInspector] public float timeToggled;
     [HideInInspector] public bool gameOver = false;
     [HideInInspector] public bool showRunTime;
@@ -35,6 +42,7 @@ public class GameController : MonoBehaviour
 //    bool levelLost = false;
 //    bool levelWon = false;
     bool toggleStats = false;
+    bool shouldSaveGame;
     float levelElapsedTime = 0;
     float gameElapsedTime = 0;
     double roundedGameElapsedTime;
@@ -50,6 +58,7 @@ public class GameController : MonoBehaviour
         UnpackStoredOptionDictionary();
         InitiateAudioManager();
         InitiatePauseMenu();
+        LoadGameOnStart();
     }
     private void Start()
     {
@@ -75,6 +84,13 @@ public class GameController : MonoBehaviour
         {
             TogglePauseMenu();
         }
+        if ((Input.GetKeyDown("i")))
+        {
+            foreach (KeyValuePair<int,double> currentBestLevelTime in bestLevelTimes)
+            {
+                Debug.Log(currentBestLevelTime);
+            }
+        }
         UpdateTimer();
         
     }
@@ -95,6 +111,10 @@ public class GameController : MonoBehaviour
             pauseMenuCanvasObject = Instantiate(Resources.Load("Pause Menu Canvas")) as GameObject;
         }
         pauseMenuCommands = GameObject.FindGameObjectWithTag("PauseMenuCanvas").GetComponent<PauseMenuCommands>();
+    }
+    void LoadGameOnStart()
+    {
+        LoadGame();
     }
     public void ToggleGameCanvas(bool turnOn)
     {
@@ -137,6 +157,33 @@ public class GameController : MonoBehaviour
                 pauseMenuCommands.PauseGame();
             return;
             }
+    }
+    public void SaveGame()
+    {
+        if (initiateLoadSystem)
+        {
+            SaveSystem.SavePlayerData(this);
+        }
+    }
+    public void LoadGame()
+    {
+        if (initiateLoadSystem)
+        {
+            PlayerData loadedData = SaveSystem.LoadPlayerData();
+            if (loadedData != null)
+            {
+                bestLevelTimes = loadedData.bestLevelTimes;
+                bestRunTime = loadedData.bestRunTime;
+                unlockedLevels = loadedData.unlockedLevels;
+            }
+        }
+    }
+    public void ClearAllSaveData()
+    {
+        bestLevelTimes.Clear();
+        bestRunTime = 0;
+        unlockedLevels.Clear();
+        SaveGame();
     }
     void ResetText()
     {
@@ -257,6 +304,22 @@ public class GameController : MonoBehaviour
         canLoadNextLevel = true;
         //canRestartRun = true;
         //levelWon = true;
+        UnlockNextLevel();
+        UpdateHighScore();
+        if (shouldSaveGame)
+        {
+            SaveGame();
+            shouldSaveGame = false;
+        }
+    }
+    void UnlockNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (!unlockedLevels.Contains(currentSceneIndex+1)&& !dontUnlockNextLevelLevels.Contains(currentSceneIndex))
+        {
+            unlockedLevels.Add(currentSceneIndex+1);
+            shouldSaveGame = true;
+        }
     }
     void LevelChange()
     {
@@ -282,6 +345,44 @@ public class GameController : MonoBehaviour
         //    }
         //}
     }
+    public void UpdateHighScore()
+    {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+        double currentLevelTime = roundedLevelElapsedTime;
+        double currentRunTime = roundedGameElapsedTime;
+
+        UpdateRunHighScore(currentLevel, currentRunTime);
+        UpdateLevelHighScore(currentLevel, currentLevelTime);
+        
+    }
+    void UpdateRunHighScore(int currentLevel, double currentRunTime)//Update full run high score when you finish a run
+    {
+        if (showRunTime && CheckIfExitToMenuLevel(currentLevel))
+        {
+            if (bestRunTime == 0 || currentRunTime < bestRunTime)
+            {
+                bestRunTime = currentRunTime;
+                shouldSaveGame = true;
+            }
+        }
+    }
+    void UpdateLevelHighScore(int currentLevel, double currentLevelTime)//update level high score whenever you finish a level
+    {
+        if (!bestLevelTimes.ContainsKey(currentLevel))
+        {
+            bestLevelTimes.Add(currentLevel, currentLevelTime);
+            shouldSaveGame = true;
+            return;
+        }
+        else if (bestLevelTimes.ContainsKey(currentLevel))
+        {
+            if (currentLevelTime < bestLevelTimes[currentLevel])
+            {
+                bestLevelTimes[currentLevel] = currentLevelTime;
+                shouldSaveGame = true;
+            }
+        }
+    }
     public void QuitToMainMenu()
     {
         runComplete = true;
@@ -289,9 +390,25 @@ public class GameController : MonoBehaviour
         LoadLevelByIndex(0);
         ToggleGameCanvas(false);
     }
+    bool CheckIfExitToMenuLevel(int index)
+    {
+        if (exitToMenuLevels.Contains(index))
+        {
+            return true;
+        }
+        return false;
+    }
     void LoadLevelByRelativeIndex(int nextLevelRelativeIndex)//0 means restart level, 1 means go forward one, -1 means go back one
     {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + nextLevelRelativeIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + nextLevelRelativeIndex;
+
+        if (nextLevelRelativeIndex == 1 && CheckIfExitToMenuLevel(currentSceneIndex))
+        {
+            QuitToMainMenu();
+            return;
+        }
+
         LoadLevelByIndex(nextSceneIndex);
 
     }

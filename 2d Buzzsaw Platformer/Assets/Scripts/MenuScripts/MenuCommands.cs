@@ -34,6 +34,14 @@ public class MenuCommands : MonoBehaviour
             gameController.LoadLevelByIndex(buildIndex);
         }
     }
+    public void UnlockLevelByIndex(int index)
+    {
+        if (!gameController.unlockedLevels.Contains(index))
+        {
+            gameController.unlockedLevels.Add(index);
+            gameController.SaveGame();
+        }
+    }
     public void PlaySongByRelativeIndex(int indexRelation)
     {
         audioManager.PlaySongByRelativeIndex(indexRelation);
@@ -63,6 +71,10 @@ public class MenuCommands : MonoBehaviour
         {
             audioManager.loopCurrentSong = loopButton.buttonActive;
         }
+    }
+    public void ClearAllSaveData()
+    {
+        gameController.ClearAllSaveData();
     }
     public void QuitGame()
     {

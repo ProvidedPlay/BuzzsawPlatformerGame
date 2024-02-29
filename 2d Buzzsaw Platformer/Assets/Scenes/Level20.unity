@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8322,26 +8322,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 673941010354345132, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690834286253703083, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_Name
-      value: Tron Tail Particle Circle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282994828888464581, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 9158950607043460394, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: m_Name
-      value: Tron Tail Particle Cone
-      objectReference: {fileID: 0}
     - target: {fileID: 3623268968961100892, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: m_Name
@@ -8361,6 +8341,26 @@ PrefabInstance:
         type: 3}
       propertyPath: playerMoveSpeed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 673941010354345132, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690834286253703083, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_Name
+      value: Tron Tail Particle Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282994828888464581, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158950607043460394, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_Name
+      value: Tron Tail Particle Cone
       objectReference: {fileID: 0}
     - target: {fileID: 3623268968961100895, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -8440,12 +8440,12 @@ PrefabInstance:
     - target: {fileID: 6361587941301454559, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -8460,7 +8460,7 @@ PrefabInstance:
     - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}

@@ -9,69 +9,312 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b6dc30fed758a544b85b3e3fd798b664
   - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level1Dark 1.unity
+    guid: ae1d93080a3d48540b22c8cd34e99ab9
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level2Dark 1.unity
+    guid: a54c538ceffed614a9affef6aa87c1fa
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level3Dark.unity
+    guid: 98cd4af14dc88ba46b606e6576703468
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level4Dark.unity
+    guid: bf614269145fdcf4ea61ad92911636f3
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level5Dark 1.unity
+    guid: 567e56f5798877849a7221197c07b272
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level6Dark 1.unity
+    guid: c4226a9fac033a4498c47d0c71d28feb
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level8Dark 1.unity
+    guid: 6ff18f0eaa5bfcf42917f56f4a36b5c7
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level9Dark 1.unity
+    guid: 74032abc972650446960c35e3e5f474b
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level10Dark 1.unity
+    guid: 6fa0f2219c0d5f54b8179a33c11ac81f
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level11Dark 1.unity
+    guid: bb96ef8ac726cc044805a48472f8272f
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level12Dark 1.unity
+    guid: 58945a57f6a80f6458ac444664e32552
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level13Dark 1.unity
+    guid: 235a2f9e3ba32b046891c391a2b8b326
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level14Dark 1.unity
+    guid: 883181af3432e8841b88f39faf5f6a10
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level15Dark 1.unity
+    guid: 9949df147d503b2438550a141e33b056
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level16Dark 1.unity
+    guid: 534910f9286f7ee4c8205fd2355b67b5
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level17Dark 1.unity
+    guid: 7696292e0b83ab34fa695e4a524b2389
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level18Dark 1.unity
+    guid: 03fc7240bc374b545b39847ba62483b2
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level19Dark 1.unity
+    guid: 6344eaec0e8dae34382d835e7d6faefd
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level20Dark 1.unity
+    guid: a93ad7c2e726ee74a9eade85dc8834e3
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level21Dark 1.unity
+    guid: 148e560d0fb1e3f439b71199034cca29
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level22Dark 1.unity
+    guid: f47e33f50e74ee44f91b4c1dd0fe5d6d
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level23Dark 1.unity
+    guid: db11c157a475cc544b7c007b2ecd0545
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level24Dark 1.unity
+    guid: f39bd9075f6c51444b43a304e5507b2c
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level25Dark2.unity
+    guid: 625a8a66638e4034280280437898c44f
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level27Dark2.unity
+    guid: 0ccbd74f29e4e9e418fc16c2f3e7a89f
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level26Dark2.unity
+    guid: bea993f60905a4b4a9cf8740a022c5b3
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/Level28Dark2.unity
+    guid: d1f7ce58285309f40b1cbdee0cf55d25
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel13Dark 1.unity
+    guid: 521e60ef85bb791448a20efc5962abcf
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel15Dark 1.unity
+    guid: b0278c87ad0633b4b8d7e0a35a1350cf
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel18Dark 1.unity
+    guid: 9ca780c52ec764a43b53e39223017e22
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel19Dark 1.unity
+    guid: 0d950583453eddd4392e7b93b39038b8
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel22Dark 1.unity
+    guid: 27285f0dbc5d72c4b9a791df2deb5af7
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel23Dark 1.unity
+    guid: 5b1ab7c41e0388d46a6767029c3fcbe9
+  - enabled: 1
+    path: Assets/Scenes/NewArtMaps/BsideLevel27Dark 1.unity
+    guid: 75b7529791c4d2e41af62759791f2ee7
+  - enabled: 1
+    path: Assets/Scenes/RunEndScreen.unity
+    guid: 2de19f346dab0b94ba069df0dfb2dbc6
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level1Dark.unity
+    guid: ff240a54d723ad44fb4c831d14c40b28
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level2Dark.unity
+    guid: 7e2aabfb54f1e2a49ac98f7eb81ceb45
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level3Dark 1.unity
+    guid: f3a4e7ed8ec67384bad3a70ba0a77c1c
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level4Dark 1.unity
+    guid: 327bb9fc9c93f684fbcf95cc2f73c932
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level5Dark.unity
+    guid: 0e08ab9cfbb5cb449af03aa5e8fe54ca
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level6Dark.unity
+    guid: 9cbcea9d737ffce4ab6923add54860c8
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level8Dark.unity
+    guid: 2382b7dfcd63922438107ad67cc7653e
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level9Dark.unity
+    guid: db01b4ca89ea5b74e892a48c3258d606
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level10Dark.unity
+    guid: c0e431da1f2df5b4a8cbbab761e9ac9a
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level11Dark.unity
+    guid: 371fc0fd56cdf344094f87665c5a31c5
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level12Dark.unity
+    guid: 4cad6b548a910374193ca27a6f639269
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level13Dark.unity
+    guid: 05bbf7501b78ef944bbeaf96907ad1d8
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level14Dark.unity
+    guid: b34731b9ad7b03d4398d94879f600310
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level15Dark.unity
+    guid: c792619eed454ea468c1d326f144fcb5
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level16Dark.unity
+    guid: d24eacc93276b604483a0264a605ffb1
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level17Dark.unity
+    guid: ea33dadf7cb2b8441a56581f1bb2738d
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level18Dark.unity
+    guid: f48533a6075b54e4e84706077355d64f
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level19Dark.unity
+    guid: 790fca25ce12b824d9c318c1e4f3e35e
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level20Dark.unity
+    guid: 32f80b0ede2c42a4f8ed0a2ede242e91
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level21Dark.unity
+    guid: 450d697cde3d2404f905110a66562ba7
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level22Dark.unity
+    guid: 078cfd6212a454b44b8a097505ac9a99
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level23Dark.unity
+    guid: 4b5eb538f9bdac54992c3db5cf3db852
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level24Dark.unity
+    guid: bad984c1df8745d4fb0db15240ab278e
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level25Dark.unity
+    guid: 93857e6f857be3442a233242ee1ff157
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level26Dark.unity
+    guid: e81afceafb439b342891846ef052a063
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level27Dark.unity
+    guid: f73bd75149e75cd4cafe9452f37f1aea
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/Level28Dark.unity
+    guid: 82bb270ce0ebb4648ad1a1e933cda7ad
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel13Dark.unity
+    guid: cd2a65414472a5c4996dbfd022624981
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel15Dark.unity
+    guid: 678793c05c12f294a999e584870f8dfe
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel18Dark.unity
+    guid: 17f5f983bc931144ab28d532ed047ac2
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel19Dark.unity
+    guid: e951180a8bd81ab48b0e339307740f52
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel22Dark.unity
+    guid: e106ef8d457523645928e36bc04336d9
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel23Dark.unity
+    guid: 1345ef621c5e1054aaab6e2f5fb979b1
+  - enabled: 1
+    path: Assets/Scenes/DarkMode/BsideLevel27Dark.unity
+    guid: 9be42875950cbb2438031451ae9883e9
+  - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 2f7cf7881182e84419275bafa63b3d97
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level3.unity
     guid: 4539b006ff338984b9b1ea64514c9403
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level4.unity
     guid: bd1900999f61fb04a9effcc821726767
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level5.unity
     guid: 0511dc27675632c4a9c2d55d416dfcfe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level6.unity
     guid: 0db689a49bdef024e97c0d645ff921c7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level8.unity
     guid: 08d139e58c8569f4aadfd4a0653b9189
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level9.unity
     guid: fa7865739671cc44090b9134ecf53b48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level10.unity
     guid: 62bab55664527554b8f1c3a130e14181
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level11.unity
     guid: 03b8878e32e78794293b352a7d84152e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level12.unity
     guid: 1b9f43f3f449ad64f80f026fa7816ce0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level13.unity
     guid: 7c409ed96254282408ec8adb392303ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level14.unity
     guid: bf95953f4ff866e4c8c3e318e2992464
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level15.unity
     guid: 4792158d2ff54bc47b74c4895b705ae4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level16.unity
     guid: c2bb8b4adba91e943ab98092f0b8c157
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level17.unity
     guid: 7ad54c691dc5d0946aa703414de2ab22
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level18.unity
     guid: f2c9b64461463f64bb42c04195e587e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level19.unity
     guid: 3a8206fdcb8af2f4b80862bf6e061a98
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level20.unity
     guid: e45a487544e0eab46bda54428fd3f6b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level21.unity
     guid: 489ee2a336e81ba42a0f46daca5239bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level22.unity
     guid: 634ba23c75b18964ca3708ceed494df8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level23.unity
     guid: 654cfbece54194646b69da981e227dc8
+  - enabled: 0
+    path: Assets/Scenes/Level24.unity
+    guid: 850f9ff35df644147a19f5fc8d63e47d
+  - enabled: 0
+    path: Assets/Scenes/Level25.unity
+    guid: e80a0fe0421e079489e2a7fcf9ccb994
+  - enabled: 0
+    path: Assets/Scenes/Level27.unity
+    guid: 569eebdf941f7d64184ad374b63e5af8
+  - enabled: 0
+    path: Assets/Scenes/Level26.unity
+    guid: b58fdc57420a8cb4b90afef1c5eadf43
+  - enabled: 0
+    path: Assets/Scenes/Level28.unity
+    guid: 3675e8fe0e8819a4893eb2d59382a068
+  - enabled: 0
+    path: Assets/Scenes/Level13bside.unity
+    guid: d383f9508a35a7946a1c240290de4bb2
+  - enabled: 0
+    path: Assets/Scenes/Level15bside.unity
+    guid: 1c6d8a8d42be7a04cb76820d298bea0d
+  - enabled: 0
+    path: Assets/Scenes/Level18bside.unity
+    guid: ecac8d772e1804f438995a9404e60f83
+  - enabled: 0
+    path: Assets/Scenes/Level19bside.unity
+    guid: 7bed9b1c9ab9f5f469d962455cc06be4
+  - enabled: 0
+    path: Assets/Scenes/Level22bside.unity
+    guid: 609a85b04ec5f5d44b371ffca5b66a6f
+  - enabled: 0
+    path: Assets/Scenes/Level23bside.unity
+    guid: 74c6c69bc260d134aaedabeb6daa7617
+  - enabled: 0
+    path: Assets/Scenes/Level27bside.unity
+    guid: 1493aedfce7f09e4ebcabb3547c38f97
   m_configObjects: {}

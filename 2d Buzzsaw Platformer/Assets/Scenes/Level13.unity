@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5427,9 +5427,19 @@ MonoBehaviour:
   timerText: {fileID: 1579027865}
   miniMapText: {fileID: 3732003}
   miniMap: {fileID: 604482773}
+  audioManager: {fileID: 0}
   dPad: {fileID: 0}
+  pauseMenuCommands: {fileID: 0}
   loadMinimap: 1
+  initiateAudio: 0
+  storedOptionDefaultValues: []
+  timeToggled: 0
+  gameOver: 0
   showRunTime: 0
+  runComplete: 0
+  gamePaused: 0
+  inMainMenu: 0
+  gameCanvas: {fileID: 0}
 --- !u!114 &1148143431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7877,32 +7887,32 @@ PrefabInstance:
     - target: {fileID: 6361587941301454559, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: verticalDashMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: dashPeriod
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: dashPeriod
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: verticalDashMultiplier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: doubleJumpSpeedThreshold
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: verticalDashMultiplier
-      value: 1.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: dashPeriod
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: dashPeriod
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
-        type: 3}
-      propertyPath: verticalDashMultiplier
-      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 5092642708707155202, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}

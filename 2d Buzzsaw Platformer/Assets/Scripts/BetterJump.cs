@@ -29,23 +29,27 @@ public class BetterJump : MonoBehaviour
     private void Update()
     {
         //rbVelocityY = rb.velocity.y;
-        rbVelocityY = rb.velocity.y * Mathf.Sign(player.previousGravityScale);
-        if (Input.GetKey("g"))
+        if (rb.gravityScale != 0)
         {
-            Debug.Log(rbVelocityY);
-        }
+            rbVelocityY = rb.velocity.y * Mathf.Sign(player.previousGravityScale);
+            if (Input.GetKey("g"))
+            {
+                Debug.Log(rbVelocityY);
+            }
 
-        if (rbVelocityY < 0 && !player.isGrounded)
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
+            if (rbVelocityY < 0 && !player.isGrounded)
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
+            }
+            else if (rbVelocityY > 0 && !Input.GetButton("Jump"))
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
+            }
+            else if (Input.GetButton("Jump") && rbVelocityY > 0 && rbVelocityY < longJumpThreshold)
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
+            }
         }
-        else if (rbVelocityY >0 && !Input.GetButton("Jump"))
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
-        }
-        else if (Input.GetButton("Jump") && rbVelocityY > 0 && rbVelocityY < longJumpThreshold)
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime * Mathf.Sign(player.previousGravityScale);
-        }
+        
     }
 }

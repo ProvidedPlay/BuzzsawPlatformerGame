@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3704,7 +3704,7 @@ PrefabInstance:
     - target: {fileID: 2159433574430002648, guid: 7d78f133590b24a42918f71d25201de4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2159433574430002648, guid: 7d78f133590b24a42918f71d25201de4,
         type: 3}
@@ -5613,62 +5613,62 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 703651033}
     m_ColliderPaths:
-    - - X: -90000116
+    - - X: 39999971
         Y: -60000000
-      - X: -90000116
-        Y: -30000000
-      - X: -140000000
-        Y: -30000116
-      - X: -139999884
-        Y: -60000000
-    - - X: 39999884
-        Y: -60000000
-      - X: 39999884
+      - X: 39999971
         Y: -30000000
       - X: -10000000
-        Y: -30000116
-      - X: -9999884
+        Y: -30000029
+      - X: -9999971
         Y: -60000000
-    - - X: -90000116
-        Y: -160000000
-      - X: -90000116
-        Y: -110000000
+    - - X: -90000029
+        Y: -60000000
+      - X: -90000029
+        Y: -30000000
       - X: -140000000
-        Y: -110000116
-      - X: -139999884
+        Y: -30000029
+      - X: -139999971
+        Y: -60000000
+    - - X: 29999971
         Y: -160000000
-    - - X: 29999884
-        Y: -160000000
-      - X: 29999884
+      - X: 29999971
         Y: -110000000
       - X: -10000000
-        Y: -110000116
-      - X: -9999930
-        Y: -150000100
-      - X: 20000015
-        Y: -150000187
-      - X: 20000116
+        Y: -110000029
+      - X: -9999971
+        Y: -150000000
+      - X: 20000000
+        Y: -150000029
+      - X: 20000029
+        Y: -160000000
+    - - X: -90000029
+        Y: -160000000
+      - X: -90000029
+        Y: -110000000
+      - X: -140000000
+        Y: -110000029
+      - X: -139999971
         Y: -160000000
   m_CompositePaths:
     m_Paths:
-    - - {x: -9.000014, y: -6}
-      - {x: -9.000014, y: -3}
-      - {x: -14, y: -3.0000145}
-      - {x: -13.999986, y: -6}
-    - - {x: 3.9999857, y: -6}
-      - {x: 3.9999857, y: -3}
-      - {x: -1, y: -3.0000145}
-      - {x: -0.9999855, y: -6}
-    - - {x: -9.000014, y: -16}
-      - {x: -9.000014, y: -11}
-      - {x: -14, y: -11.000014}
-      - {x: -13.999986, y: -16}
-    - - {x: 2.9999857, y: -16}
-      - {x: 2.9999857, y: -11}
-      - {x: -1, y: -11.000014}
-      - {x: -0.9999901, y: -15.00001}
-      - {x: 2.0000017, y: -15.000023}
-      - {x: 2.0000143, y: -16}
+    - - {x: -9.000006, y: -6}
+      - {x: -9.000006, y: -3}
+      - {x: -14, y: -3.0000057}
+      - {x: -13.999993, y: -6}
+    - - {x: 3.9999945, y: -6}
+      - {x: 3.9999945, y: -3}
+      - {x: -1, y: -3.0000057}
+      - {x: -0.9999942, y: -6}
+    - - {x: -9.000006, y: -16}
+      - {x: -9.000006, y: -11}
+      - {x: -14, y: -11.000006}
+      - {x: -13.999993, y: -16}
+    - - {x: 2.9999943, y: -16}
+      - {x: 2.9999943, y: -11}
+      - {x: -1, y: -11.000006}
+      - {x: -0.9999942, y: -15}
+      - {x: 2, y: -15.000007}
+      - {x: 2.0000057, y: -16}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.000005
 --- !u!50 &703651032
@@ -9419,7 +9419,7 @@ PrefabInstance:
     - target: {fileID: 2159433574430002648, guid: f53e70742b54a464ba08110d951baf59,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2159433574430002648, guid: f53e70742b54a464ba08110d951baf59,
         type: 3}
@@ -9733,7 +9733,7 @@ PrefabInstance:
     - target: {fileID: 3623268968961100895, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3623268968961100895, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -9773,12 +9773,12 @@ PrefabInstance:
     - target: {fileID: 6361587941301454559, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517507718444942172, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
@@ -9793,7 +9793,7 @@ PrefabInstance:
     - target: {fileID: 7164284323890934495, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}
       propertyPath: verticalDashMultiplier
-      value: 1.125
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7399517326831760979, guid: 74696facd5ab8194ba14a574ca48dac0,
         type: 3}

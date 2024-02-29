@@ -59,7 +59,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -143,18 +143,18 @@ TextureImporter:
       name: Half Saw_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 408
-        width: 144
-        height: 144
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a3a2a0644bce594c9e123cfe405a575
+      spriteID: 86129ec56175c3b4099394b1623f2591
       internalID: 8809251635782325883
       vertices: []
       indices: 
@@ -164,18 +164,18 @@ TextureImporter:
       name: Half Saw_1
       rect:
         serializedVersion: 2
-        x: 216
-        y: 408
-        width: 144
-        height: 144
+        x: 192
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e49cb4aa4dded40b3dd49dcc794352
+      spriteID: de4d3cc5f6f905444bf2d3e2a1ff4375
       internalID: -5137634752924145392
       vertices: []
       indices: 
@@ -185,18 +185,18 @@ TextureImporter:
       name: Half Saw_2
       rect:
         serializedVersion: 2
-        x: 24
-        y: 216
-        width: 144
-        height: 144
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f6d6357a503ae47bfe7b50867db330
+      spriteID: 9c1dac5204d868840ba845f196bfef99
       internalID: 3760342343048823805
       vertices: []
       indices: 
@@ -206,18 +206,18 @@ TextureImporter:
       name: Half Saw_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 216
-        width: 144
-        height: 144
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e967d6db905ae7e4eb71d45169bc87d2
+      spriteID: 8d342d23029586048b65c82fa3efa958
       internalID: -474507575515717923
       vertices: []
       indices: 
@@ -227,18 +227,18 @@ TextureImporter:
       name: Half Saw_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 24
-        width: 144
-        height: 144
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a65720fe934c0641bcfc90ce55d6cc1
+      spriteID: e25ab60300f69b94ebbaf6528d048dda
       internalID: 7961785723680536186
       vertices: []
       indices: 
@@ -248,18 +248,18 @@ TextureImporter:
       name: Half Saw_5
       rect:
         serializedVersion: 2
-        x: 216
-        y: 24
-        width: 144
-        height: 144
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29cb1f9d760ef914d88efddc063535b1
+      spriteID: 2ceffac6eb7e6ac4fa0b76205313a592
       internalID: 7904548987647243597
       vertices: []
       indices: 

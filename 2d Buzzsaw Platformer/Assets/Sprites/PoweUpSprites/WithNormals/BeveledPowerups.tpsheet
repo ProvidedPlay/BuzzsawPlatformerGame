@@ -1,0 +1,20 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:368c1c09ef78e1012e50d45e316d9480:acd698e1f1dd42edb05f22124bb43f63:c18e3cecbd27985c1df0e10e005aa8f1$
+#
+:format=40300
+:texture=BeveledPowerups.png
+:size=512x512
+:normalmap=BeveledPowerups_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Dash Improved Powerup Beveled (1);0;320;192;192; 0.5;0.5; 0;0;0;0
+Dash Powerup Beveled;0;128;192;192; 0.5;0.5; 0;0;0;0
+Dash Ultra Powerup Beveled (2);192;320;192;192; 0.5;0.5; 0;0;0;0
+Double Jump Powerup Beveled;192;128;192;192; 0.5;0.5; 0;0;0;0
