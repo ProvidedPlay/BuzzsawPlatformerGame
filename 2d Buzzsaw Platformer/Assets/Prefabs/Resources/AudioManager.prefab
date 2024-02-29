@@ -207,6 +207,13 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 0.3
     pitch: 1
+  - name: Face The Obelisk
+    clip: {fileID: 8300000, guid: 6a8338219192dbf4c876db331a473857, type: 3}
+    mixerGroup: {fileID: 824207671999465951, guid: b7ed54d08aece07439152f820c5bc5ce,
+      type: 2}
+    source: {fileID: 0}
+    volume: 0.5
+    pitch: 1
   currentSong:
     name: 
     clip: {fileID: 0}
