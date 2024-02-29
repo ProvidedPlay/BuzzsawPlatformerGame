@@ -69,7 +69,11 @@ MonoBehaviour:
   pauseMenuCommands: {fileID: 0}
   loadMinimap: 1
   initiateAudio: 0
-  exitToMenuLevels: 1b00000022000000
+  initiateLoadSystem: 0
+  exitToMenuLevels: 1b000000220000003e00000045000000
+  dontUnlockNextLevelLevels: 2200000045000000
+  bestRunTime: 0
+  unlockedLevels: 
   storedOptionDefaultValues:
   - key: Master Volume
     value: 8

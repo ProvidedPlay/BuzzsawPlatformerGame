@@ -44,6 +44,7 @@ public class DoubleJump : MoveAbility
                 InterruptSwitches();
 
                 PlaySound(counter < 1 ? "Jump Sound" : "Double Jump Sound");
+                player.SetPlayerAnimationJump();
 
                 float jumpStrength = player.jumpStrength;
                 if (counter > 0)

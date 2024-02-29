@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public float delayedJumpPeriod;
     public MoveAbility[] moveAbilities;
     public string[] delayedActionAbilities;
+    public GameObject spriteHandler;
     [HideInInspector] public bool tronTailActive;
     [HideInInspector] public bool inTronZone;
     [HideInInspector] public bool globalLightOn;
@@ -26,11 +27,13 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool canWalk;
     [HideInInspector] public bool gravityReversed;
     [HideInInspector] public bool delayedJumpTimerActive;
+    [HideInInspector] public bool playerIsWalking;
     [HideInInspector] public AudioManager audioManager;
     [HideInInspector] public List<Switch> levelSwitches;
     [HideInInspector] public GameObject[] levelSwitchObjects;
-    [HideInInspector] public Light2D levelLight;
-
+    public Light2D levelLight;
+    [HideInInspector] public DashEcho dashEcho;
+    [HideInInspector] public bool flipX;
     [HideInInspector] public Rigidbody2D rb;
     Animator anim;
     GameController controller;
@@ -38,18 +41,20 @@ public class Player : MonoBehaviour
     Collider2D col;
     Light2D playerLight;
     
+    
 
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = spriteHandler.GetComponent<Animator>();
         controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        sp = GetComponent<SpriteRenderer>();
+        sp = spriteHandler.GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         playerLight = GameObject.FindGameObjectWithTag("PlayerLight").GetComponent<Light2D>();
+        dashEcho = gameObject.GetComponentInChildren<DashEcho>();
         FindLevelLight();
         FindLevelSwitches();
     }
@@ -99,6 +104,8 @@ public class Player : MonoBehaviour
         Vector2 newPosition = rb.position;
         newPosition.x = newPosition.x + horizontalMovement;
         rb.position = newPosition;
+        SetPlayerAnimationWalk(currentHorizontal);
+        FacePlayer(currentHorizontal);
     }
     public void ActivateDelayedJumpTimer()
     {
@@ -127,6 +134,7 @@ public class Player : MonoBehaviour
     void PlayerDead()
     {
         playerIsDead = true;
+        dashEcho.DeactivateDashEcho();
         anim.SetTrigger("playerDead");
         controller.GameOver();
     }
@@ -136,11 +144,48 @@ public class Player : MonoBehaviour
         newScale.y = -transform.localScale.y;
         transform.localScale = newScale;
     }
+    public void FacePlayer(float horizontalMovement)
+    {
+        if(horizontalMovement > 0 && flipX)//(horizontalMovement > 0 && sp.flipX)
+        {
+            //sp.flipX = false;
+            flipX = false;
+            Vector3 newScale = spriteHandler.transform.localScale;
+            newScale.x = 1;
+            spriteHandler.transform.localScale = newScale;
+        }
+        else if (horizontalMovement < 0 && !flipX)//(horizontalMovement < 0 && !sp.flipX)
+        {
+            //sp.flipX = true;
+            flipX = true;
+            Vector3 newScale = spriteHandler.transform.localScale;
+            newScale.x = -1;
+            spriteHandler.transform.localScale = newScale;
+        }
+    }
+    public void SetPlayerAnimationWalk(float walkValue)
+    {
+        bool playerIsCurrentlyWalking = walkValue == 0 ? false : true;
+        if (playerIsCurrentlyWalking != playerIsWalking)
+        {
+            anim.SetBool("playerIsWalking", playerIsCurrentlyWalking);
+            playerIsWalking = playerIsCurrentlyWalking;
+        }
+    }
+    public void SetPlayerAnimationGrounded(bool isGrounded)
+    {
+        anim.SetBool("playerGrounded", isGrounded);
+    }
+    public void SetPlayerAnimationJump()
+    {
+        anim.SetTrigger("playerJump");
+    }
     void PlayerReachedGoal()
     {
         anim.enabled = false;
         sp.enabled = false;
         playerLight.enabled = false;
+        dashEcho.DeactivateDashEcho();
         playerReachedGoal = true;
         PlaySound("Win Sound");
         controller.GameOver();
@@ -199,7 +244,10 @@ public class Player : MonoBehaviour
                     levelSwitch.switchActive = true;
                     if (levelSwitch.flipLinkedSwitch)
                     {
-                        levelSwitch.sp.flipY = !levelSwitch.sp.flipY;
+                        //levelSwitch.sp.flipY = !levelSwitch.sp.flipY;
+                        Vector3 newScale = levelSwitch.transform.localScale;
+                        newScale.y = -levelSwitch.transform.localScale.y;
+                        levelSwitch.transform.localScale = newScale;
                     }
                     levelSwitch.UpdateSprite();
                     levelSwitch.deactivationCheckTimer = 0;

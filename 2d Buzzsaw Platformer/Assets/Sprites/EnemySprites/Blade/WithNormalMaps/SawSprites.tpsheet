@@ -1,0 +1,22 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:3354794f3edd9d97feacdf759f4906e1:b7352870bcbf2a2c689b2323fb6938ab:22424b3c6ced544847787fb40fdcb982$
+#
+:format=40300
+:texture=SawSprites.png
+:size=1152x192
+:normalmap=SawSprites_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Saw-0;0;0;192;192; 0.5;0.5; 0;0;0;0
+Saw-1;192;0;192;192; 0.5;0.5; 0;0;0;0
+Saw-2;384;0;192;192; 0.5;0.5; 0;0;0;0
+Saw-3;576;0;192;192; 0.5;0.5; 0;0;0;0
+Saw-4;768;0;192;192; 0.5;0.5; 0;0;0;0
+Saw-5;960;0;192;192; 0.5;0.5; 0;0;0;0

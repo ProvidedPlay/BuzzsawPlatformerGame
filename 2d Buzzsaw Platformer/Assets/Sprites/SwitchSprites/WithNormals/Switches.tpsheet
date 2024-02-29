@@ -1,0 +1,41 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:56aee11e81b9ec40cfdfbdfd1513da80:9a49a751f0ec0d58245d105ab5ace9b2:67a8617c2987e9be0f07c91554bd54be$
+#
+:format=40300
+:texture=Switches.png
+:size=1024x1024
+:normalmap=Switches_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Gravity Switch 2-0;0;832;192;192; 0.5;0.5; 0;0;0;0
+Gravity Switch 2-1;0;640;192;192; 0.5;0.5; 0;0;0;0
+Gravity Switch-0;0;448;192;192; 0.5;0.5; 0;0;0;0
+Gravity Switch-1;0;256;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour updated (1)-0;0;64;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour updated (1)-1;192;832;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour updated (2)-0;0;64;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour updated (2)-1;384;832;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour-0;576;832;192;192; 0.5;0.5; 0;0;0;0
+Light Switch colour-1;768;832;192;192; 0.5;0.5; 0;0;0;0
+Light Switch greyscale-0;192;640;192;192; 0.5;0.5; 0;0;0;0
+Light Switch greyscale-1;768;832;192;192; 0.5;0.5; 0;0;0;0
+Light Switch loghtoff new-0;192;448;192;192; 0.5;0.5; 0;0;0;0
+Light Switch loghtoff new-1;192;256;192;192; 0.5;0.5; 0;0;0;0
+Refresh Switch Silhouette;192;64;192;192; 0.5;0.5; 0;0;0;0
+Refresh Switch v2-0;384;640;192;192; 0.5;0.5; 0;0;0;0
+Refresh Switch v2-1;576;640;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-0;768;640;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-1;384;448;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-2;384;256;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-3;384;64;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-4;576;448;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-5;768;448;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-6;576;256;192;192; 0.5;0.5; 0;0;0;0
+Tron Tail Switch-7;576;64;192;192; 0.5;0.5; 0;0;0;0

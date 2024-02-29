@@ -11278,6 +11278,10 @@ MonoBehaviour:
   pauseMenuCommands: {fileID: 0}
   loadMinimap: 1
   initiateAudio: 0
+  initiateLoadSystem: 0
+  exitToMenuLevels: 
+  bestRunTime: 0
+  unlockedLevels: 
   storedOptionDefaultValues: []
   timeToggled: 0
   gameOver: 0
@@ -14101,6 +14105,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: PlayerFeet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623268968961100890, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623268968961100890, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623268968961100890, guid: 74696facd5ab8194ba14a574ca48dac0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74696facd5ab8194ba14a574ca48dac0, type: 3}

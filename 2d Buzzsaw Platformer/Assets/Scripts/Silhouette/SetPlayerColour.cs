@@ -19,7 +19,7 @@ public class SetPlayerColour : MonoBehaviour
     {
         player = GetComponent<Player>();
         controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>(); ;
-        sp = GetComponent<SpriteRenderer>();
+        sp = player.spriteHandler.GetComponent<SpriteRenderer>();
     }
     private void Start()
     {

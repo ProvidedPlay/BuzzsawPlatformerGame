@@ -39,6 +39,7 @@ public class Dash : MoveAbility
                 if (horizontalDirection!=0 )
                 {
                     PlaySound("Dash");
+                    player.dashEcho.ActivateDashEcho();
                     DashInDirection(horizontalDirection);
 
                     counter += 1;
@@ -84,6 +85,7 @@ public class Dash : MoveAbility
     {
         player.canWalk = true;
         moveActive = false;
+        player.dashEcho.DeactivateDashEcho();
 
         player.rb.gravityScale = player.previousGravityScale;
         if (!movementInterrupted)

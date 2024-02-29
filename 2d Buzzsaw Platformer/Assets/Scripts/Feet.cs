@@ -17,7 +17,11 @@ public class Feet : MonoBehaviour
     {
         if (collision.CompareTag("Ground") || collision.CompareTag("MovingPlatform"))
         {
-            player.isGrounded = true;
+            if (!player.isGrounded)
+            {
+                player.isGrounded = true;
+                player.SetPlayerAnimationGrounded(player.isGrounded);
+            }
             player.ResetMovements();
             player.GroundResetSwitches();
             if (collision.CompareTag("MovingPlatform"))
@@ -33,6 +37,7 @@ public class Feet : MonoBehaviour
         if (collision.CompareTag("Ground") || collision.CompareTag("MovingPlatform"))
         {
             player.isGrounded = false;
+            player.SetPlayerAnimationGrounded(player.isGrounded);
             if (collision.CompareTag("MovingPlatform"))
             {
                 player.isGroundedMovingPlatform = false;

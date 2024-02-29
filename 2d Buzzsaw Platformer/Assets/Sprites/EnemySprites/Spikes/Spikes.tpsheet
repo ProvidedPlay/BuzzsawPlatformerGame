@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:48f63ce4414a84e76265554150561dfa:3975f108ad175de223077b9471781c83:7b59ecd1f32439cc351c373371ff2092$
+#
+:format=40300
+:texture=Spikes.png
+:size=512x512
+:normalmap=Spikes_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Spikes prefab;0;248;264;264; 0.5;0.5; 0;0;0;0
