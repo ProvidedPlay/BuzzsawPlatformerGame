@@ -6,6 +6,7 @@ tpsheetFileNames:
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites.tpsheet
 - Assets/Sprites/EnemySprites/Spikes/Spikes.tpsheet
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes.tpsheet
+- Assets/Sprites/EnvironmentSprites/WithNormals/EgyptLake.tpsheet
 - Assets/Sprites/PlayerSprite/playersprites.tpsheet
 - Assets/Sprites/PoweUpSprites/ImprovedBevels/BetterPowerups.tpsheet
 - Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups.tpsheet
@@ -19,6 +20,7 @@ textureFileNames:
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites.png
 - Assets/Sprites/EnemySprites/Spikes/Spikes.png
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes.png
+- Assets/Sprites/EnvironmentSprites/WithNormals/EgyptLake.png
 - Assets/Sprites/PlayerSprite/playersprites.png
 - Assets/Sprites/PoweUpSprites/ImprovedBevels/BetterPowerups.png
 - Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups.png
@@ -32,6 +34,7 @@ normalmapFileNames:
 - Assets/Sprites/EnemySprites/Blade/WithNormalMaps/SawSprites_n.png
 - Assets/Sprites/EnemySprites/Spikes/Spikes_n.png
 - Assets/Sprites/EnemySprites/Spikes/WithNormals/Spikes_n.png
+- Assets/Sprites/EnvironmentSprites/WithNormals/EgyptLake_n.png
 - Assets/Sprites/PlayerSprite/playersprites_n.png
 - Assets/Sprites/PoweUpSprites/ImprovedBevels/BetterPowerups_n.png
 - Assets/Sprites/PoweUpSprites/WithNormals/BeveledPowerups_n.png

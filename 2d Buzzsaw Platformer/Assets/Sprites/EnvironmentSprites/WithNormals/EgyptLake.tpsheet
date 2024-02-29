@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:2467db1e86204ee6dc593c9355215a41:5782157257bc371c9821a7a9dda263ea:3931ba7dbb948dea5eacff4f7f7e15e4$
+#
+:format=40300
+:texture=EgyptLake.png
+:size=8192x4096
+:normalmap=EgyptLake_n.png
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Egypt lake;0;796;5100;3300; 0.5;0.5; 0;0;0;0
